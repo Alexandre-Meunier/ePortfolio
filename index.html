@@ -9,62 +9,62 @@
   </head>
   <body>
 
-    <header><!--Faire un header fixé qui apparait quand on remonte-->
+  <header><!--Faire un header fixé qui apparait quand on remonte-->
       <div class="header-div">
         <div class="pp">
           <a href="index.html">
-            <img id="ID-picture" src="OIP (1).jpeg">
+            <img id="ID-photo" src="ID_photo.jpeg">
           </a>
         </div>
         <div class="section-div">
-          <a class="section" href="Career.html">Mon parcours</a>
-          <a class="section" href="Project.html">Mes projets</a>
-          <a class="section" href="Experience.html">Mes expériences</a>
+          <a class="section" href="#Career">Mon parcours</a>
+          <a class="section" href="#Project">Mes projets</a>
+          <a class="section" href="#Experience">Mes expériences</a>
         </div>
       </div>
     </header>
 
     <div id="middle">
       <div id="reception">
-        <div id="test">
+        <div id="blocImg">
+          <img id="imgCode" src="ID_photo.jpeg" alt="">
+        </div>
+        <div id="ide">
           <div id="code">
-            <div><span>Developer</span> Alexandre_Meunier = new Developer('software');</div>
-            <br>
-            <div>Alexandre_Meunier.AddPicture('img/picture');</div>
-            <br>
-            <div>System.out.println(Alexandre_Meunier.getDescription);</div>
+            <div><span style="color: #811b1e">public class </span><span style="color: #7f26ad">E-Portfolio </span>{</div><!--Essayer de faire bouger la parenthese après chaque texte-->
+            <div>&emsp;&emsp;<span style="color: #811b1e">public static void </span><span style="color: #7f26ad">main</span>(String[] args) {</div>
+            <div>&emsp;&emsp;&emsp;&emsp;<span>Developer</span> Alexandre_Meunier = new Developer('software');</div>
+            <div>&emsp;&emsp;&emsp;&emsp;Alexandre_Meunier.AddPicture('img/picture');</div>
+            <div>&emsp;&emsp;&emsp;&emsp;System.out.println(Alexandre_Meunier.getDescription);</div>
+            <div>&emsp;&emsp;}</div>
+            <div>}</div>
             <span id="inputBar">|</span>
           </div>
           <div id="console">
-            <p>Je suis Alexandre Meunier, j'ai 19 ans, étudiant à l'IUT de Villetaneuse en deuxième année de BUT Informatique. Je me suis passionné pour l'informatique pour pouvoir découvrir de nouvelles choses tous les jours</p>
-            <p>Je vois l'informatique et plus précisement la programmation comme un puzzle, un jeu de construction, qu'il faut résoudre. J'ai des compétences dans l'optimisation d'un programme, dans l'apprentissage et dans le développement d'application.</p>
+            <p>Je suis <strong>Alexandre Meunier</strong>, j'ai 19 ans, étudiant à l'IUT de Villetaneuse en deuxième année de BUT Informatique. Je me suis passionné pour l'informatique pour pouvoir découvrir de nouvelles choses tous les jours.</p>
+            <p>Je vois l'informatique et plus précisement la programmation comme un puzzle, un jeu de construction, comme des Lego. Il faut imbriquer chaque pièce de façon logique et méthodique pour après les réutiliser.</p>
           </div>
-        </div>
-        <div id="imgCode">
-          <img src="OIP%20(1).jpeg" alt="">
         </div>
       </div>
       <div id="presentation">
-        <div id="me"></div>
-        <div id="interest-center">
-          <p>centres d'interets</p>
-          <ul>
-            <li>
-            </li>
-          </ul>
+        <div id="me" class="side-bar"></div>
+        <div id="interest-center" class="side-bar">
+          <h1>centres d'interets</h1>
+          <p>Depuis toujours, je suis fasciné par les jeux d'énigme, les jeux de construction comme les Lego.</p>
+          <p>De plus, je joue à des jeux vidéo comme SimCity pour la construction, World of Warcraft pour la découverte, Satisfactory pour la réflexion et l'optimisation  et War Warhammer pour la stratégie.</p>
+          <p>Je cherche toujours à apprendre et à développer mes compétences sur l'algorithmie, l'optimisation et je suis toujours à la page sur la dernière technologie sortie. Sur cela, j'ai encore beaucoup de choses à apprendre pour devenir un vrai développeur logiciel mais d'année en année je progresse.</p>
         </div>
-        <div id="career">
-          <p>schema parcours</p>
-          <a href="Career.html"><span>---> En découvrir plus sur mon parcours</span></a>
+        <div id="Career" class="side-bar">
+          <h1>Trouver une idée sur mon parcours</h1>
         </div>
-        <div id="skills">
-          <p>Mes compétences (liste des langages que je maitrise)</p>
+        <div id="Skills" class="side-bar">
+          <h1>Mes compétences (liste des langages que je maitrise)</h1>
         </div>
-        <div id="project">
-          <p>La naissance d'un informaticien (projets but, projet stage)</p>
+        <div id="Project" class="side-bar">
+          <h1>La naissance d'un informaticien (projets but, projet stage)</h1>
         </div>
-        <div id="experience">
-          <p>Mes experiences (stage, job etudiants)</p>
+        <div id="Experience" class="side-bar">
+          <h1>Mes experiences (stage, job etudiants)</h1>
         </div>
       </div>
     </div>
