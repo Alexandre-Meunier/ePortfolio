@@ -22,7 +22,7 @@ header {
   }
 }
 
-#ID-picture {
+#ID-photo {
   border-radius: 100px;
   max-height: 100%;
   height: 90px
@@ -48,38 +48,53 @@ header {
 }
 
 #reception{
-  background: linear-gradient(to bottom right, #5c2f5c, #0a0833);
-  height: 500px;
+  background: linear-gradient(to bottom left, #4f284f, #0a0833);
+  height: 700px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  #test{
+  flex-direction: row;
+  }
 
-  }
-  #code{
-    width: 75%;
-    height: 75%;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    user-select: none;
-    justify-content: center;
-  }
-  #imgCode{
-    margin-left: 700px;
-    margin-top: 300px;
-    position: fixed;
-  }
-  #console{
-    text-align: left;
-    background-color: #22252d;
-    border: 3px solid #30333c;
-    padding: 10px;
-  }
+#code{
+  user-select: none;
+  text-align: left;
+  /*Colors*/
+}
+#console{
+  margin-right: 150px;
+  text-align: left;
+  background-color: #22252d;
+  border: 3px solid #30333c;
+  padding: 10px;
+  /*visibility: hidden;*/
 }
 
-#presentation div,.side-bar{
+#blocImg{
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  width: 12%;
+  justify-content: center;
+}
+
+#imgCode{
+  /*visibility: hidden;*/
+  transform: scale(1.2);
+  margin-top: 100px;
+}
+
+#ide {
+  margin-right: 50px;
+  width: 85%;
+  height: 75%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: end;
+  grid-gap: 15px;
+  position: relative;
+}
+
+.side-bar{
   border-top: 5px solid #5f89ba;
 }
 
