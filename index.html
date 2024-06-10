@@ -6,43 +6,47 @@
     <title>Alexandre Meunier</title>
     <link rel="stylesheet" type="text/css" href="front.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=consolas&display=swap" rel="stylesheet">
   </head>
   <body>
 
-  <header><!--Faire un header fixé qui apparait quand on remonte-->
-      <div class="header-div">
+  <header>
+      <div class="section-header">
         <div class="pp">
           <a href="index.html">
-            <img id="ID-photo" src="ID_photo.jpeg">
+            <img id="ID-photo" src="ID_photo.jpeg" alt="fr"/>
           </a>
         </div>
-        <div class="section-div">
-          <a class="section" href="#Career">Mon parcours</a>
-          <a class="section" href="#Project">Mes projets</a>
-          <a class="section" href="#Experience">Mes expériences</a>
+        <div id="section-rubrique">
+          <a class="rubrique" href="#Career">Mon parcours</a>
+          <a class="rubrique" href="#Project">Mes projets</a>
+          <a class="rubrique" href="#Experience">Mes expériences</a>
         </div>
       </div>
     </header>
 
     <div id="middle">
-      <div id="reception">
-        <div id="blocImg">
-          <img id="imgCode" src="ID_photo.jpeg" alt="">
-        </div>
+      <div id="section-presentation">
         <div id="ide">
           <div id="code">
-            <div><span style="color: #811b1e">public class </span><span style="color: #7f26ad">E-Portfolio </span>{</div><!--Essayer de faire bouger la parenthese après chaque texte-->
-            <div>&emsp;&emsp;<span style="color: #811b1e">public static void </span><span style="color: #7f26ad">main</span>(String[] args) {</div>
-            <div>&emsp;&emsp;&emsp;&emsp;<span>Developer</span> Alexandre_Meunier = new Developer('software');</div>
-            <div>&emsp;&emsp;&emsp;&emsp;Alexandre_Meunier.AddPicture('img/picture');</div>
-            <div>&emsp;&emsp;&emsp;&emsp;System.out.println(Alexandre_Meunier.getDescription);</div>
-            <div>&emsp;&emsp;}</div>
-            <div>}</div>
-            <span id="inputBar">|</span>
+            <p><span class="nbCode">1.&emsp;</span><span style="color: #f55">public class </span><span style="color: #7f26ad">E-Portfolio </span>{</p><!--Essayer de faire bouger la parenthese après chaque texte-->
+            <p><span class="nbCode">2.&emsp;</span>&emsp;&emsp;<span style="color: #811b1e">public static void </span><span style="color: #7f26ad">main</span>(String[] args) {</p>
+            <p><span class="nbCode">3.&emsp;</span>&emsp;&emsp;&emsp;&emsp;<span>Developper</span> Alexandre_Meunier = new Developper('software');</p>
+            <p><span class="nbCode">4.&emsp;</span>&emsp;&emsp;&emsp;&emsp;Alexandre_Meunier.AddPicture('img/picture');</p>
+            <p><span class="nbCode">5.&emsp;</span>&emsp;&emsp;&emsp;&emsp;System.out.println(Alexandre_Meunier.getDescription);</p>
+            <p><span class="nbCode">6.&emsp;</span>&emsp;&emsp;}</p>
+            <p><span class="nbCode">7.&emsp;</span>}<span id="inputBar">|</span></p>
           </div>
-          <div id="console">
-            <p>Je suis <strong>Alexandre Meunier</strong>, j'ai 19 ans, étudiant à l'IUT de Villetaneuse en deuxième année de BUT Informatique. Je me suis passionné pour l'informatique pour pouvoir découvrir de nouvelles choses tous les jours.</p>
-            <p>Je vois l'informatique et plus précisement la programmation comme un puzzle, un jeu de construction, comme des Lego. Il faut imbriquer chaque pièce de façon logique et méthodique pour après les réutiliser.</p>
+          <div id="section-console">
+            <div id="console">
+              <div id="blocImg">
+                <img src="ID_photo.jpeg" alt="">
+              </div>
+              <div>
+                <p>Je suis <strong>Alexandre Meunier</strong>, j'ai 19 ans, étudiant à l'IUT de Villetaneuse en deuxième année de BUT Informatique. Je me suis passionné pour l'informatique pour pouvoir découvrir de nouvelles choses tous les jours.</p>
+                <p>Je vois l'informatique et plus précisement la programmation comme un puzzle, un jeu de construction, comme des Lego. Et où il faut imbriquer chaque pièce de façon logique et méthodique pour après les réutiliser.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
