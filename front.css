@@ -1,6 +1,6 @@
 body {
   font-family:Roboto;
-  color: #3DB2DE;
+  color: #4ea2c2;
   margin: 0;
   overflow-x: hidden;
 
@@ -65,15 +65,32 @@ a.rubrique{
   margin-bottom: 10px;
 }
 
+#section-code{
+  user-select: none;
+  text-align: left;
+  background-color: #00000066;
+  border: 3px solid #30333c;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: Consolas;
+  .red{
+    color: #c14343
+  }
+  .violet{
+    color: #8727b8
+  }
+}
+
 #section-presentation{
   background: linear-gradient(to bottom left, #4f284f, #0a0833);
   display: flex;
   justify-content: center;
+  text-align: left;
   padding-top: 9%;
   padding-bottom: 3%;
 }
 
-#ide {
+#presentation {
   width: 85%;
   display: flex;
   flex-direction: column;
@@ -81,35 +98,58 @@ a.rubrique{
   position: relative;
 }
 
-#code{
-  user-select: none;
-  text-align: left;
-  padding-left:50px;
-  font-family: Consolas;
+#text-presentation{
+  display: flex;
+}
+
+#sous-text-presentation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#centre-interet{
+  text-align: center;
 }
 
 .nbCode{
   color: darkgrey;
 }
 
-#console{
-  display: flex;
-  text-align: left;
-  background-color: #00000066;
-  border: 3px solid #30333c;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
-
-#blocImg{
+#img{
   padding:20px;
 }
 
 .side-bar{
   border-top: 5px solid #5f89ba;
 }
+
+#section-parcours{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom left, #4f284f, #0a0833);
+}
+
+#parcours{
+  width: 70%;
+}
+
+.bloc-parcours{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.text-parcours{
+  border: 3px solid #30333c;
+  background-color: #00000070;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.text-parcours
 
 /*footer*/
 

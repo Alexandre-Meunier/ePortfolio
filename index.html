@@ -18,7 +18,7 @@
           </a>
         </div>
         <div id="section-rubrique">
-          <a class="rubrique" href="#Career">Mon parcours</a>
+          <a class="rubrique" href="#div-parcours">Mon parcours</a>
           <a class="rubrique" href="#Project">Mes projets</a>
           <a class="rubrique" href="#Experience">Mes expériences</a>
         </div>
@@ -27,49 +27,101 @@
 
     <div id="middle">
       <div id="section-presentation">
-        <div id="ide">
-          <div id="code">
-            <p><span class="nbCode">1.&emsp;</span><span style="color: #f55">public class </span><span style="color: #7f26ad">E-Portfolio </span>{</p><!--Essayer de faire bouger la parenthese après chaque texte-->
-            <p><span class="nbCode">2.&emsp;</span>&emsp;&emsp;<span style="color: #811b1e">public static void </span><span style="color: #7f26ad">main</span>(String[] args) {</p>
+        <div id="presentation">
+          <div id="section-code">
+            <p><span class="nbCode">1.&emsp;</span><span class="red">public class </span><span class="violet">E-Portfolio </span>{</p><!--Essayer de faire bouger la parenthese après chaque texte-->
+            <p><span class="nbCode">2.&emsp;</span>&emsp;&emsp;<span class="red">public static void </span><span class="violet">main</span>(String[] args) {</p>
             <p><span class="nbCode">3.&emsp;</span>&emsp;&emsp;&emsp;&emsp;<span>Developper</span> Alexandre_Meunier = new Developper('software');</p>
             <p><span class="nbCode">4.&emsp;</span>&emsp;&emsp;&emsp;&emsp;Alexandre_Meunier.AddPicture('img/picture');</p>
             <p><span class="nbCode">5.&emsp;</span>&emsp;&emsp;&emsp;&emsp;System.out.println(Alexandre_Meunier.getDescription);</p>
             <p><span class="nbCode">6.&emsp;</span>&emsp;&emsp;}</p>
             <p><span class="nbCode">7.&emsp;</span>}<span id="inputBar">|</span></p>
           </div>
-          <div id="section-console">
-            <div id="console">
-              <div id="blocImg">
+          <div id="section-text-presentation">
+            <div id="text-presentation">
+              <div id="img">
                 <img src="ID_photo.jpeg" alt="">
               </div>
-              <div>
+              <div id="sous-text-presentation">
                 <p>Je suis <strong>Alexandre Meunier</strong>, j'ai 19 ans, étudiant à l'IUT de Villetaneuse en deuxième année de BUT Informatique. Je me suis passionné pour l'informatique pour pouvoir découvrir de nouvelles choses tous les jours.</p>
-                <p>Je vois l'informatique et plus précisement la programmation comme un puzzle, un jeu de construction, comme des Lego. Et où il faut imbriquer chaque pièce de façon logique et méthodique pour après les réutiliser.</p>
+                <p>Je cherche toujours à apprendre et à développer mes compétences sur l'algorithmie, l'optimisation et je suis toujours à la page sur la dernière technologie sortie.</p>
               </div>
+            </div>
+            <div id="centre-interet">
+              <p>Je vois l'informatique et plus précisement la programmation comme un puzzle, un jeu de construction, comme des Lego. Et où il faut imbriquer chaque pièce de façon logique et méthodique pour après les réutiliser.</p>
+              <p>De plus, je joue à des jeux vidéo comme SimCity pour la construction, World of Warcraft pour la découverte, Satisfactory pour la réflexion et l'optimisation et War Warhammer pour la stratégie.</p>
             </div>
           </div>
         </div>
       </div>
-      <div id="presentation">
-        <div id="me" class="side-bar"></div>
-        <div id="interest-center" class="side-bar">
-          <h1>centres d'interets</h1>
-          <p>Depuis toujours, je suis fasciné par les jeux d'énigme, les jeux de construction comme les Lego.</p>
-          <p>De plus, je joue à des jeux vidéo comme SimCity pour la construction, World of Warcraft pour la découverte, Satisfactory pour la réflexion et l'optimisation  et War Warhammer pour la stratégie.</p>
-          <p>Je cherche toujours à apprendre et à développer mes compétences sur l'algorithmie, l'optimisation et je suis toujours à la page sur la dernière technologie sortie. Sur cela, j'ai encore beaucoup de choses à apprendre pour devenir un vrai développeur logiciel mais d'année en année je progresse.</p>
+      <div id="section-parcours" class="side-bar">
+        <h1>Trouver une idée sur mon parcours</h1>
+        <p>Explication : mettre chaque parcours dans un cadre comme pour le code</p>
+        <div id="parcours">
+          <div class="bloc-parcours">
+            <div class="annee"><p>2022</p><p>2025</p></div>
+            <div class="text-parcours">
+              <strong>BUT Informatique</strong>
+              <hr>
+              <div class="info-parcours"><!--mettre la barre hr plus petite avec un pourcentage, -->
+
+              </div>
+              <span> Université Sorbonne Paris Nord,</span>
+              <span>Deuxième année en cours</span>
+              <!--Ajouter un texte pour dire ce que j'ai appris-->
+            </div>
+          </div>
+          <div class="bloc-parcours">
+            <div class="annee"><p>2020</p><p>2022</p></div>
+            <div class="text-parcours">
+              <strong>Baccalauréat technologique STI2D</strong>
+              <span>Lycée de La Tourelle à Sarcelles (95),</span>
+              <span>Mention Bien</span>
+            </div>
+          </div>
         </div>
-        <div id="Career" class="side-bar">
-          <h1>Trouver une idée sur mon parcours</h1>
-        </div>
-        <div id="Skills" class="side-bar">
-          <h1>Mes compétences (liste des langages que je maitrise)</h1>
-        </div>
-        <div id="Project" class="side-bar">
-          <h1>La naissance d'un informaticien (projets but, projet stage)</h1>
-        </div>
-        <div id="Experience" class="side-bar">
-          <h1>Mes experiences (stage, job etudiants)</h1>
-        </div>
+        <p> 2022-2025 ; 2020-2022 ; 2021-2022
+          Concours des Olympiades de
+          Sciences de l’Ingénieur (OSI)
+          Participation chez Thalès à Vélizy (78)</p>
+      </div>
+      <div id="Skills" class="side-bar">
+        <h1>Mes compétences (liste des langages que je maitrise)</h1>
+      </div>
+      <div id="Project" class="side-bar">
+        <h1>La naissance d'un informaticien (projets but, projet stage)</h1>
+        <p>
+          Réseau social
+          O Algorithme de recherche en fonction du CDC
+          J’ai pu développer des algorithmes optimisés
+          L'ardoise magique
+          O Développement de formes géométriques sur une ardoise
+          O Structuration de classes et création de tests unitaires
+          J’ai pu développer mon esprit d’analyse
+          Organisation d’un travail d’équipe
+          O Trouver et participer à un événement culturel
+          O Créer un site Internet fictif sur l’événement pour une nouvelle
+          édition dans une équipe de 4
+          J’ai pu combattre ma timidité en interrogeant les visiteurs,
+          J’ai appris à développer un site en fonction des besoins du client
+
+        </p>
+      </div><!--Séparer les jobs étudiants et le stage-->
+      <div id="Experience" class="side-bar">
+        <h1>Mes experiences (stage, job etudiants)</h1>
+        <p>
+          Janvier 2024 - Mars 2024
+          Stage – OpenSVC à Gouvieux (60)
+          Développement d’un logiciel en Golang contenant un API REST en
+          travaillant sous Linux dans une équipe avec GitHub
+          Octobre 2023 – Aujourd’hui
+          Caissier – Carrefour à Luzarches (95)
+          Gestion client, Polyvalence, Traitement des problèmes
+          Juin 2022 - Juillet 2022
+          Secrétariat – Garage Pacemaker à Champagne-sur-Oise (95)
+          Gestion du stock et du planning des employés, Prise de
+          rendez-vous, Gestion des devis et des factures
+        </p>
       </div>
     </div>
 
