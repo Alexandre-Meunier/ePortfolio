@@ -7,8 +7,8 @@ function flashingInputBar()  {
         }, 500)
         setTimeout(function () {
             inputBar.style.visibility="visible"
-        }, 1000)
-    }, 1500)
+        }, 1250)
+    }, 1250)
 }
 
 flashingInputBar();
