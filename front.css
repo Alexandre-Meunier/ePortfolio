@@ -81,12 +81,12 @@ a.rubrique{
   }
 }
 
-#section-presentation{
+#section-principal{
   background: linear-gradient(to bottom left, #4f284f, #0a0833);
   display: flex;
   justify-content: center;
   text-align: left;
-  padding-top: 9%;
+  padding-top: 6%;
   padding-bottom: 3%;
 }
 
@@ -94,8 +94,17 @@ a.rubrique{
   width: 85%;
   display: flex;
   flex-direction: column;
-  grid-gap: 15px;
+  gap: 15px;
   position: relative;
+}
+
+#section-text-presentation{
+  display: flex;
+  justify-content: center;
+}
+
+#sous-section-text-presentation{
+  width: 80%;
 }
 
 #text-presentation{
@@ -120,36 +129,81 @@ a.rubrique{
   padding:20px;
 }
 
-.side-bar{
-  border-top: 5px solid #5f89ba;
-}
-
-#section-parcours{
+.sections{
   display: flex;
   flex-direction: column;
   align-items: center;
   background: linear-gradient(to bottom left, #4f284f, #0a0833);
+  padding: 20px 0 20px;
+  border-top: 5px solid #5f89ba;
 }
 
-#parcours{
+.titre-section{
+  padding: 10px;
+  margin-bottom: 20px;
+  h1{
+    border-bottom: solid 2px;
+  }
+}
+
+.bloc-section{
+  display: flex;
+  justify-content: center;
+}
+
+#section-bloc-parcours{
   width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .bloc-parcours{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+}
+
+.sous-titre-parcours{
+  text-align: center;
+}
+
+.bar-parcours{
+  width: 80%;
 }
 
 .text-parcours{
   border: 3px solid #30333c;
   background-color: #00000070;
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px;
+  width: 75%;
+  text-align: left;
 }
 
-.text-parcours
+#bloc-competences{
+  display: flex;
+  flex-direction: column;
+}
+
+.liste-competence{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.competence-carte{
+  display: flex;
+  align-items: center;
+  border: 2px solid #30333c;
+  background-color: #00000070;
+  margin: 10px;
+  padding: 15px;
+  font-size: 1.6em;
+  & p{
+    margin: 0;
+  }
+}
 
 /*footer*/
 
