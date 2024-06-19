@@ -129,6 +129,10 @@ a.rubrique{
   padding:20px;
 }
 
+#photo-presentation{
+  height: 250px;
+}
+
 .sections{
   display: flex;
   flex-direction: column;
@@ -164,7 +168,7 @@ a.rubrique{
   justify-content: center;
 }
 
-.sous-titre-parcours{
+.titre-parcours{
   text-align: center;
 }
 
@@ -203,6 +207,27 @@ a.rubrique{
   & p{
     margin: 0;
   }
+}
+
+#section-projet{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.liste-projet{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  gap: 15px;
+}
+
+.text-projet{
+  border: 3px solid #30333c;
+  background-color: #00000070;
+  border-radius: 10px;
+  padding: 15px;
 }
 
 /*footer*/
