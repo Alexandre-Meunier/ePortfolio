@@ -234,6 +234,20 @@ a.rubrique{
   text-align: left;
 }
 
+.bloc{
+    width: 50%;
+}
+
+#section-job{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#rapport{
+    text-decoration: none;
+}
+
 /*footer*/
 
 footer{
