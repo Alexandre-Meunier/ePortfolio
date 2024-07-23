@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Alexandre Meunier</title>
+    <link rel="stylesheet" type="text/css" href="front2.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=consolas&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+  <header>
+    <div class="section-header">
+      <div id="pp">
+        <a href="index.html">
+          <img id="ID-photo" src="icon/général/photo_secondaire.jpeg" alt="fr"/>
+        </a>
+      </div>
+      <div id="section-rubrique">
+        <a class="rubrique" href="#Parcours">Mon parcours</a>
+        <a class="rubrique" href="#Competences">Mes compétences</a>
+        <a class="rubrique" href="#Projets">Mes projets</a>
+        <a class="rubrique" href="#Experiences">Mes expériences</a>
+      </div>
+      <a class="rubrique" href="#contacter">Me contacter</a><!--Renvoyer vers un formulaire-->
+    </div>
+  </header>
+
+  <div id="middle">
+    <div id="section-presentation">
+      <div id="presentation">
+        <div id="section-code" class="apparition"><!--Finir les couleurs-->
+          <p><span class="nbCode">1&emsp;</span><span class="orange">public class </span><span>EPortfolio </span>{</p><!--Essayer de faire bouger la parenthese après chaque texte-->
+          <p><span class="nbCode">2&emsp;</span>&emsp;&emsp;<span class="orange">public static void </span><span class="bleu">main</span>(String[] args) {</p>
+          <p><span class="nbCode">3&emsp;</span>&emsp;&emsp;&emsp;&emsp;<span>Developper</span> Alexandre_Meunier = <span class="orange">new</span> Developper(<span class="vert">'software'</span>);</p>
+          <p><span class="nbCode">4&emsp;</span>&emsp;&emsp;&emsp;&emsp;Alexandre_Meunier.AddPicture(<span class="vert">'img/picture'</span>);</p>
+          <p><span class="nbCode">5&emsp;</span>&emsp;&emsp;&emsp;&emsp;System.<span class="violet">out</span>.println(Alexandre_Meunier.getDescription);</p>
+          <p><span class="nbCode">6&emsp;</span>&emsp;&emsp;}</p>
+          <p><span class="nbCode">7&emsp;</span>}<span id="inputBar">|</span></p>
+        </div>
+        <div id="bloc-text-presentation" class="apparition">
+          <div id="text-presentation">
+            <div id="img">
+              <img id="photo-presentation" src="icon/photo_principale.jpg" alt="">
+            </div>
+            <div id="text-presentation-column"><!--Modifier-->
+              <span>Je suis <strong>Alexandre Meunier</strong>, j'ai 20 ans, étudiant à l'IUT de Villetaneuse en deuxième année de BUT Informatique. Je me suis passionné pour l'informatique pour avoir un impact sur le monde de demain. Je suis toujours à la recherche des dernières technologies, des dernières inventions et je cherche toujours à apprendre et à développer mes compétences sur l'algorithmie et l'optimisation.</span>
+              <br>
+              <span>Ma vision de l'informatique est comme un puzzle ou des Lego où il faut imbriquer chaque pièce de façon logique et méthodique pour avoir une bonne structure et pour que cela perdure dans le temps. De plus, je joue à des jeux vidéo comme SimCity pour la construction, World of Warcraft pour la découverte, Satisfactory pour l'optimisation et War Warhammer pour la réflexion.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section-parcours" class="sections">
+      <div class="titre-section">
+        <h1>Mon parcours</h1>
+      </div>
+      <div class="bloc">
+        <div class="bloc-normal">
+          <div class="bloc-parcours carte">
+            <h2 class="titre-bloc">BUT Informatique (2022 - 2025)</h2>
+            <hr class="bar-titre-carte">
+            <div class="info-parcours">
+              <p>Depuis ma deuxième année à l'<a href="https://www.univ-spn.fr/" class="lien">Université Sorbonne Paris Nord</a> (93), j'ai pu développer beaucoup de mes compétences techniques et professionnelles grâce à des TP mais surtout des projets faits seul ou en groupe.</p>
+              <p>J'ai pu notamment apprendre une multitude de langages informatiques pour développer des applications avec différentes architectures mais j'ai aussi pu développer mes compétences sur le développement et la gestion d'un projet.</p>
+            </div>
+          </div>
+          <div class="bloc-parcours carte">
+            <h2 class="titre-bloc">Concours des Olympiades de Sciences de l’Ingénieur (2021 - 2022)</h2>
+            <hr class="bar-titre-carte">
+            <div class="info-parcours">
+              <p>Pendant ma deuxième année en STI2D, j'ai pu intégrer une équipe composée de 3 élèves de mon lycée sur le développement d'un projet pour le concours de l'Olympiade de Science de l'ingénieur qui a rassemblé des élèves de la filière SI et STI2D venant de toute la France en 2022 chez <a href="https://www.thalesgroup.com/fr" class="lien">Thalès à Vélizy</a>.</p>
+              <p>Autour du thème de "l’ingénierie au service de la mobilité", nous avons développé et présenté un projet sur le déplacement d'un drone alimenté par des caténaires et pouvant porter des outils afin de faciliter le travail des ouvriers dans les zones difficiles d'accès.</p>
+            </div>
+          </div>
+          <div class="bloc-parcours carte">
+            <h2 class="titre-bloc">Baccalauréat technologique STI2D (2020 - 2022)</h2>
+            <hr class="bar-titre-carte">
+            <div class="info-parcours">
+              <p>Les années du BAC au lycée <a href="https://lpo-maryse-conde.fr/" class="lien">Maryse Condé</a> (anciennement La Tourelle) à Sarcelles (95) m'ont permis de découvrir le développement de projets autour de l'informatique, de la conception. En effet, les projets en STI2D ont demandé de concevoir des objets touchant la robotique et de connaître les bases de la programmation avec le langage Arduino.</p>
+              <p>C'est dans une optique de vouloir apporter à un programme un algorithme efficace et la volonté d'apprendre que j'ai choisi le BUT Informatique pour mon cursus post-bac.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section-competences" class="sections">
+      <div class="titre-section">
+        <h1>Mes compétences</h1>
+      </div>
+      <div id="bloc-competences">
+        <div>
+          <h3>Langages informatiques :</h3>
+          <div class="ligne-competences">
+            <div class="carte-competence">
+              <p>Python</p><!--Reseau social-->
+            </div>
+            <div class="carte-competence">
+              <p>Java</p><!--Ardoise magique-->
+            </div>
+            <div class="carte-competence">
+              <p>Go</p><!--stage-->
+            </div>
+            <div class="carte-competence">
+              <p>Bash</p><!--stage-->
+            </div>
+            <div class="carte-competence">
+              <p>Redis</p><!--stage-->
+            </div>
+            <div class="carte-competence">
+              <p>SQL</p><!--???-->
+            </div>
+            <div class="carte-competence">
+              <p>PHP</p><!--SAE 2-->
+            </div>
+            <div class="carte-competence">
+              <p>HTML</p><!--SAE 1-->
+            </div>
+            <div class="carte-competence">
+              <p>CSS</p><!--SAE 1-->
+            </div>
+            <div class="carte-competence">
+              <p>JS</p><!--SAE 2-->
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3>Architecture logicielle :</h3>
+          <div class="ligne-competences">
+            <div class="carte-competence">
+              <p>API Restful</p><!--Stage-->
+            </div>
+            <div class="carte-competence">
+              <p>CI</p><!--Stage-->
+            </div>
+            <div class="carte-competence">
+              <p>Microservices</p><!--Stage-->
+            </div>
+            <div class="carte-competence">
+              <p>SSH</p><!--Stage-->
+            </div>
+            <div class="carte-competence">
+              <p>Pattern MVC</p><!--SAE 1-->
+            </div>
+            <div class="carte-competence">
+              <p>Tests unitaires</p>
+            </div>
+          </div>
+        </div>
+        <!--L'écrire directement dans un texte
+        <h3>Développement d'un projet :</h3>
+        <div class="ligne-competences">
+          <div class="carte-competence">
+            <p>Recueil de besoin</p>
+          </div>
+          <div class="carte-competence">
+            <p>Gestion d'un projet</p>
+          </div>
+          <div class="carte-competence">
+            <p>Travail en équipe</p>
+          </div>
+        </div>-->
+        <div>
+          <h3>Outils de travail :</h3>
+          <div class="ligne-competences">
+            <div class="carte-competence">
+              <p>GitHub</p>
+            </div>
+            <div class="carte-competence">
+              <p>IDEs JetBrain</p>
+            </div>
+            <div class="carte-competence">
+              <p>Visual Studio Code</p>
+            </div>
+            <div class="carte-competence">
+              <p>Eclipse</p>
+            </div>
+            <div class="carte-competence">
+              <p>WinSCP</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3>Outils de communication :</h3>
+          <div class="ligne-competences">
+            <div class="carte-competence">
+              <p>Mattermost</p>
+            </div>
+            <div class="carte-competence">
+              <p>Google Drive</p>
+            </div>
+            <div class="carte-competence">
+              <p>Mail</p>
+            </div>
+            <div class="carte-competence">
+              <p>CRM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section-projet" class="sections"><!--Pouvoir trier par compétence-->
+      <div class="titre-section">
+        <h1>Mes projets universitaires</h1>
+      </div>
+      <div class="ligne-projet">
+        <div class="bloc-parcours">
+          <div class="carte">
+            <h2 class="titre-bloc">Réseau social</h2>
+            <hr class="bar-titre-carte">
+            <div class="info-parcours">
+              <h3 class="sous-titre">Objectif :</h3>
+              <p>Développer un réseau social simple en Python</p>
+              <br>
+              <h3 class="sous-titre">Ce que j'ai fait :</h3>
+              <p>- Algorithme de recherche</p>
+              <p>- Dictionnaires et tableaux</p>
+            </div>
+          </div>
+        </div>
+        <div class="bloc-parcours">
+          <div class="carte">
+            <h2 class="titre-bloc">L'ardoise magique</h2>
+            <hr class="bar-titre-carte">
+            <div class="info-parcours">
+              <h3 class="sous-titre">Objectif :</h3>
+              <p>Développer des formes géométriques sur un plan 2D</p>
+              <br>
+              <h3 class="sous-titre">Ce que j'ai fait :</h3>
+              <p>- Polymorphisme, héritage, encapsulation</p>
+              <p>- Tests unitaires</p>
+            </div>
+          </div>
+        </div>
+        <div class="bloc-parcours">
+          <div class="carte">
+            <h2 class="titre-bloc">Développement web</h2>
+            <hr class="bar-titre-carte">
+            <div class="info-parcours">
+              <h3 class="sous-titre">Objectif :</h3>
+              <p>Développement d'un site Internet</p>
+              <br>
+              <h3 class="sous-titre">Ce que j'ai fait :</h3>
+              <p>- Gestion de projet</p>
+              <p>- Recueil de besoins</p>
+              <p>- Développement front end et back end</p>
+            </div>
+          </div>
+        </div>
+        <div class="bloc-parcours">
+          <div class="carte">
+            <h2 class="titre-bloc">Optimisation web</h2>
+            <hr class="bar-titre-carte">
+            <div class="info-parcours">
+              <h3 class="sous-titre">Objectif :</h3>
+              <p>Optimisation et debug du site créé dans Développement web</p>
+              <br>
+              <h3 class="sous-titre">Ce que j'ai fait :</h3>
+              <p>- Correction des bugs visuels du site</p>
+              <p>- Ajout de fonctionnalités manquantes</p>
+              <p>- Optimisation des controlleurs</p>
+            </div>
+          </div>
+        </div>
+        <div class="bloc-parcours">
+          <div class="carte">
+            <h2 class="titre-bloc">Orchestrateur de services</h2>
+            <hr class="bar-titre-carte">
+            <div class="info-parcours">
+              <h3 class="sous-titre">Objectif :</h3>
+              <p>Développement d'un logiciel au sein de mon stage </p>
+                <p>qui assure la haute disponibilité des services d'un groupe de serveurs.</p>
+              <br>
+              <h3 class="sous-titre">Ce que j'ai fait :</h3>
+              <p>- Création de gestionnaires d'API en Go</p>
+              <p>- Serveurs intégrant un daemon, Redis et une BDD</p>
+              <p>- Manipulation d'un daemon sous Linux</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section-experience" class="sections"><!--Pouvoir choisir entre stage-alternance et jobs étudiant-->
+      <div class="titre-section">
+        <h1>Mes expériences professionnelles</h1>
+      </div>
+      <div class="bloc">
+        <div class="bloc-normal">
+          <div>
+            <h1>Stage :</h1>
+            <div class="bloc-parcours carte">
+              <div class="text-parcours">
+                <h3 class="titre-bloc">OpenSVC (Janvier 2024-Mars 2024):</h3>
+                <hr class="bar-titre-carte">
+                <div class="info-parcours">
+                  <p>J'ai découvert le monde de l'entreprise en informatique en intégrant l'équipe <strong>OpenSVC</strong> dans l'encadrement d'un stage pendant 10 semaines. Située à Gouvieux dans l'Oise, cette entreprise développe un logiciel depuis 13 ans pour assurer la haute disponibilité des services d'une entreprise</p>
+                  <p>Ainsi, j'ai pu m'intégrer dans un projet GitHub pour ajouter un gestionnaire d'API en Go pour influencer un daemon sous Linux développé par l'entreprise. J'ai pu apprendre le système de parallélisme du Go, le fonctionnement d'une API RESTful et d'un daemon</p>
+                  <p>J'ai pu rédiger un rapport sur mon stage, sur son déroulement et sur toutes les compétences que j'ai améliorées : <a href="documents/Rapport%20de%20stage.pdf" class="lien">Rapport de stage OpenSVC</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="section-job">
+            <h1>Jobs étudiant :</h1>
+              <div class="bloc-parcours carte">
+                <div class="text-parcours">
+                  <h3 class="titre-bloc">Carrefour (Octobre 2023-Aujourd'hui):</h3>
+                  <hr class="bar-titre-carte">
+                  <div class="info-parcours">
+                    <p>À côté de mes études, j'exerce le métier de caissier au <strong>Carrefour</strong> de Luzarches (95). J'ai pu améliorer ma polyvalence, à gérer les clients à ma caisse et à traiter rapidement les problèmes</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bloc-parcours carte">
+                <div class="text-parcours">
+                  <h3 class="titre-bloc">McDonald's (Août 2023-Septembre 2023):</h3>
+                  <hr class="bar-titre-carte">
+                  <div class="info-parcours">
+                    <p>J'ai pu continuer mes jobs étudiants en tant qu'équipier dans le <strong>McDonald's</strong> de l'Isle-Adam (95). En travaillant sur la préparation des commandes des clients, j'ai pu améliorer ma rapidité, ma prise d'initiative ainsi que ma cohésion dans une équipe.</p>
+                    <p>De plus, il fallait s'adapter rapidement aux changements dans les commandes, sur les demandes des clients, et sur le changement de poste.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bloc-parcours carte">
+                <div class="text-parcours">
+                  <h3 class="titre-bloc">Garage Pacemaker (Juin 2022-Juillet 2022):</h3>
+                  <hr class="bar-titre-carte">
+                  <div class="info-parcours">
+                    <p>Mon tout premier job étudiant s'est passé dans le <strong>Garage Pacemaker</strong> situé à Champagne sur Oise (95). J'ai pu exercer le métier de secrétaire dans le garage appartenant à mon frère Sébastien Meunier.</p>
+                    <p>Ainsi, j'ai pu gérer la clientèle, la prise de rendez-vous via un téléphone ou directement sur place. Suite à cela, j'ai pu gérer les devis, les factures mais aussi la gestion des stocks et du planning des employés</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div id="footer-presentation">
+      <p>Alexandre Meunier</p>
+      <hr>
+      <div class="coordonnees"><img id="icon-email" src="icon/général/email.jpeg"><span>alexandre.meunierpro@outlook.fr</span></div>
+      <div class="coordonnees"><img id="icon-tel" src="icon/général/telephone.png"><span>06 40 64 44 22</span></div>
+      <div class="coordonnees"><img id="icon-add" src="icon/général/maison.png"><span>32 bis rue Kleinpeter 95270 Viarmes</span></div>
+    </div>
+    <div id="liens">
+      <a href="https://www.linkedin.com/in/alexandre-meunier-0366b9287/"><img id="icon-ln" src="icon/général/linkedIn.png"></a>
+      <a href="https://github.com/Alexandre-Meunier"><img id="icon-git" src="icon/général/github.png"></a>
+    </div>
+  </div>
+
+  <script src="fonctions.js"></script>
+
+  </body>
+</html>
