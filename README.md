@@ -18,6 +18,7 @@
 - Changer la structure de ma présentation, trop basique, séparer le code et la présentation
 - Mettre du sombre sur le code, pour amplifier le gradient et bien séparer le code et le texte
 - idée : Mettre ma photo en lévitation
+- Ajouter le CV en dessous de la présentation (ou dans le footer)
 
 ### Compétences
 
