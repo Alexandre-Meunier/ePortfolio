@@ -64,18 +64,15 @@ a.rubrique{
 /*middle*/
 
 #middle {
-    background-color: #18128d;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .sections{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to bottom left, #4f284f, #0a0833);
+    background: linear-gradient(to top, #4f284f, #0a0833);
     padding: 20px 0 20px;
-    border-top: 5px solid #5f89ba;
 }
 
 .bloc{/*anciennement .bloc-section*/
@@ -98,15 +95,21 @@ a.rubrique{
     }
 }
 
+.border-top{
+    border-top: 5px solid #5f89ba;
+}
+
 /*Section présentation*/
 
 #section-code{
     user-select: none;
     text-align: left;
-    background-color: #00000066;
-    border: 3px solid #30333c;
-    border-radius: 10px;
     padding: 10px;
+    width: 80%;
+}
+
+#bloc-code{
+    padding-top: 75px;
     font-family: Consolas, serif;
     .orange{
         color: #b47453;
@@ -123,48 +126,73 @@ a.rubrique{
 }
 
 #section-presentation {/*était avec #section-principal*/
-    padding-top: 6%;
-    padding-bottom: 3%;
     text-align: left;
-    background: linear-gradient(to bottom left, #4f284f, #0a0833);
+    background: linear-gradient(to bottom left, #000000, #0a0833, #0a0833);
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
 }
 
 #presentation {
     width: 85%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    animation-delay: 0.5s;
     position: relative;
+    border: 3px solid #b6b3b3;
+    &::before{
+        content: "Alexandre Meunier";
+        position: absolute;
+        background-color: #0a0833;
+        padding: 0 25px;
+        transform: translateX(-50%);
+        left: 50%;
+        top: -35px;
+        font-size: 50px;
+        color: #3dbcd7;
+    }
 }
+
+/*#prenom-presentation{
+    position: absolute;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 15px;
+    bottom: 265px;
+}*/
 
 #bloc-text-presentation{/*#section-text-presentation*/
     display: flex;
     justify-content: center;
-    animation-delay: 0.5s;
 }
 
 .apparition{
     opacity: 0;
+    transition: opacity 1s ease-in-out;
     animation: apparaitre 1s forwards;
 }
 
+/*
 @keyframes apparaitre {
     to {
         opacity: 1;
     }
-}
+}*/
 
 #text-presentation{/*fusion #sous-section-text-presentation et #text-presentation*/
     display: flex;
-    width: 80%;
+
 }
 
 #text-presentation-column{/*#sous-text-presentation*/
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 25px;
+
 }
 
 #centre-interest{
@@ -185,7 +213,12 @@ a.rubrique{
 
 /*Section parcours*/
 
-.bloc-parcours{/*fusion .bloc-parcours et .text-parcours*/
+#bloc-parcours{
+    display: flex;
+    flex-direction: column;
+}
+
+.parcours{/*fusion .bloc-parcours et .text-parcours*/
     display: flex;
     text-align: left;
     align-items: center;
@@ -215,6 +248,12 @@ a.rubrique{
     justify-content: center;
 }
 
+.bar-vertical{
+    width: 5px;
+    background-color: white;
+    margin: 0 5px;
+}
+
 .carte-competence{/*anciennement .competence-carte*/
     display: flex;
     align-items: center;
@@ -237,6 +276,11 @@ a.rubrique{
     display: flex;
     justify-content: center;
     width: 80%;
+    & div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 /*Suppresion #section-projet*/
@@ -272,14 +316,19 @@ a.rubrique{
 /*footer*/
 
 #footer{
-    background-color: #18128d;
+    display: flex;
+    background: linear-gradient(to top right, #231d91, #141156);
+    justify-content: flex-end;
+}
+
+#section-footer{
     display: flex;
     flex-direction: row;
     padding: 20px;
-    border-top: 5px solid #5f89ba;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
     gap: 40px;
+    width: 55%;
 }
 
 #footer-presentation img{
@@ -314,6 +363,4 @@ a.rubrique{
 
 #liens{
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
