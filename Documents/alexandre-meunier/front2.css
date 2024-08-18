@@ -8,7 +8,7 @@ body {
     color: var(--principale);
     margin: 0;
     overflow-x: hidden;
-    font-size: 1.1em;
+    font-size: 1.3rem;
 }
 
 /*header*/
@@ -18,7 +18,8 @@ header {
     background: linear-gradient(to top right, #120e62, #0a0833);
     position: fixed;
     width: 100%;
-    border-bottom: #0a0833 solid 4px;
+    border-top: #2e9ddf solid 3px;
+    border-bottom: #2a3b3a solid 2px;
     z-index: 1;
     padding-top: 5px;
 }
@@ -44,6 +45,7 @@ a.rubrique{
     text-decoration: none;
     color: var(--rubrique);
     font-size: 1.2rem;
+    transition: 1s all;
     &:after{
         display: block;
         content: '';
@@ -59,9 +61,45 @@ a.rubrique{
     &:hover:after{
         opacity: 1;
     }
+    &:hover{
+        scale: 1.1;
+    }
 }
 
 /*middle*/
+
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #221b2f;
+    border: 2px solid #383838;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+/* Style pour le bouton de fermeture */
+.popup .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #c2c2c2;
+}
+
+.popup .close-btn:hover {
+    color: #f00;
+}
+
+#text-popup{
+    text-align: center;
+}
 
 #middle {
     text-align: center;
@@ -71,8 +109,9 @@ a.rubrique{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to top, #4f284f, #0a0833);
+    background: linear-gradient(to top, #3f1f3f, #110e46);
     padding: 20px 0 20px;
+    scroll-margin-top: 30px;
 }
 
 .bloc{/*anciennement .bloc-section*/
@@ -111,6 +150,7 @@ a.rubrique{
 #bloc-code{
     padding-top: 75px;
     font-family: Consolas, serif;
+    color: #87adbb;
     .orange{
         color: #b47453;
     }
@@ -132,7 +172,7 @@ a.rubrique{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
+    gap: 250px;
 }
 
 #presentation {
@@ -156,6 +196,10 @@ a.rubrique{
     }
 }
 
+#cv{
+    padding-right: 200px;
+}
+
 /*#prenom-presentation{
     position: absolute;
     background-color: aliceblue;
@@ -175,13 +219,6 @@ a.rubrique{
     animation: apparaitre 1s forwards;
 }
 
-/*
-@keyframes apparaitre {
-    to {
-        opacity: 1;
-    }
-}*/
-
 #text-presentation{/*fusion #sous-section-text-presentation et #text-presentation*/
     display: flex;
 
@@ -191,7 +228,7 @@ a.rubrique{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 25px;
+    padding: 10px 25px;
 
 }
 
@@ -213,6 +250,10 @@ a.rubrique{
 
 /*Section parcours*/
 
+#section-parcours{
+    background: linear-gradient(to top, #3f1f3f, #0a0833);
+}
+
 #bloc-parcours{
     display: flex;
     flex-direction: column;
@@ -225,11 +266,20 @@ a.rubrique{
     flex-direction: column;
 }
 
+.competences-parcours{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 .carte{/*était avec bloc-parcours après fusion*/
     border: 3px solid #30333c;
     background-color: #00000070;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
 }
 
 .bar-titre-carte{/*anciennement .bar-parcours*/
@@ -276,11 +326,11 @@ a.rubrique{
     display: flex;
     justify-content: center;
     width: 80%;
-    & div{
+    /*& div{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
+    }*/
 }
 
 /*Suppresion #section-projet*/
@@ -289,8 +339,8 @@ a.rubrique{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
-    width: 80%;
+    align-items: center;
+    width: 90%;
     gap: 15px;
 }
 
@@ -309,16 +359,24 @@ a.rubrique{
     }
 }
 
-#rapport{
-    text-decoration: none;
+.lien-centre{
+    display: flex;
+    justify-content: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 /*footer*/
 
 #footer{
     display: flex;
-    background: linear-gradient(to top right, #231d91, #141156);
-    justify-content: flex-end;
+    background: linear-gradient(to bottom left, #2e2d46, #35356a);
+    justify-content: center;
+    position: relative;
 }
 
 #section-footer{
@@ -328,17 +386,39 @@ a.rubrique{
     justify-content: space-between;
     align-items: flex-end;
     gap: 40px;
-    width: 55%;
 }
 
-#footer-presentation img{
-    margin-right: 10px;
+#footer-presentation{
+    img {
+        margin-right: 10px;
+    }
+    & #titre-footer{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+#contact strong{
+    font-size: 20px;
 }
 
 .coordonnees{/*anciennement .addresse*/
     display: flex;
     align-items: center;
     margin-bottom: 5px;
+}
+
+.droits{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin: 0;
+}
+
+.copier{
+    color: #b5d855;
+    cursor: pointer;
 }
 
 #icon-email{

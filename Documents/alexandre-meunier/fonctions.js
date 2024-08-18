@@ -27,3 +27,23 @@ document.addEventListener("DOMContentLoaded", function(){
         observer.observe(element);
     });
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+    const copyTextSpans = document.querySelectorAll('.copier');
+
+    copyTextSpans.forEach(span => {
+        span.addEventListener('click', function() {
+            const textToCopy = span.textContent;
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert(`Texte copié: ${textToCopy}`);
+            }).catch(err => {
+                console.error('Échec de la copie : ', err);
+            });
+        });
+    });
+});
+
+function closePopup() {
+    document.getElementById('popup').style.opacity = 0;
+}

@@ -4,24 +4,30 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Alexandre Meunier</title>
-    <link rel="stylesheet" type="text/css" href="front2.css">
+    <link rel="stylesheet" type="text/css" href="Documents/alexandre-meunier/front2.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=consolas&display=swap" rel="stylesheet">
   </head>
   <body>
 
+  <div class="popup apparition" id="popup">
+      <button class="close-btn" onclick="closePopup()">×</button>
+      <p id="text-popup">🚧Site en construction🚧</p>
+  </div>
+
   <header>
     <div class="section-header">
       <div id="pp">
-        <a href="index.html">
-          <img id="ID-photo" src="icon/général/photo_secondaire.jpeg" alt="fr"/>
+        <a href="">
+          <img id="ID-photo" src="Documents/alexandre-meunier/icon/général/photo_secondaire.jpeg" alt="fr"/>
         </a>
       </div>
       <div id="section-rubrique">
-        <a class="rubrique" href="#section-parcours">Mon parcours</a>
-        <a class="rubrique" href="#section-competences">Mes compétences</a>
-        <a class="rubrique" href="#section-projet">Mes projets</a>
-        <a class="rubrique" href="#section-experience">Mes expériences</a>
+        <a class="rubrique" href="#section-presentation">Accueil</a>
+        <a class="rubrique" href="#section-parcours">Parcours</a>
+        <a class="rubrique" href="#section-competences">Compétences</a>
+        <a class="rubrique" href="#section-projet">Projets</a>
+        <a class="rubrique" href="#section-experience">Expériences</a>
       </div>
       <a class="rubrique" href="#footer">Me contacter</a><!--Renvoyer vers un formulaire-->
     </div>
@@ -44,11 +50,12 @@
         <!--<h1 id="prenom-presentation">Alexandre Meunier</h1>-->
         <div id="text-presentation">
           <div id="img">
-            <img id="photo-presentation" src="icon/photo_principale.jpg" alt="">
+            <img id="photo-presentation" src="Documents/alexandre-meunier/icon/photo_principale.jpg" alt="">
           </div>
           <div id="text-presentation-column">
-            <p>Je suis <strong>Alexandre Meunier</strong>, j'ai 20 ans et je suis étudiant à l'IUT de Villetaneuse en deuxième année de BUT Informatique. Je me suis passionné pour l'informatique pour avoir un impact sur le monde de demain. Je suis toujours à la recherche des dernières technologies, des dernières inventions et je cherche toujours à apprendre et à développer mes compétences sur l'algorithmie et l'optimisation.</p>
-            <p>Ma vision de l'informatique est comme un puzzle ou des Lego où il faut imbriquer chaque pièce de façon logique et méthodique pour avoir une bonne structure et pour que cela perdure dans le temps. De plus, je joue à des jeux vidéo comme SimCity pour la construction, World of Warcraft pour la découverte, Satisfactory pour l'optimisation et War Warhammer pour la réflexion.</p>
+            <p>Je suis <strong>Alexandre Meunier</strong>, j'ai 20 ans et je suis étudiant à l'IUT de Villetaneuse en deuxième année de BUT Informatique. Je me suis passionné pour l'informatique pour avoir un impact sur le monde de demain. Ainsi, je suis toujours à la recherche des dernières technologies, des dernières inventions et je cherche toujours à apprendre et à développer mes compétences sur le développement logiciel et l'optimisation.</p>
+            <p>Pour moi, un logiciel est comme un set Lego composé d'une multitude de briques placées de façon logique et méthodique pour avoir une architecture stable, optimisé et flexible. De plus, les jeux vidéo me permettent de me concentrer et d'amériorer certaines de mes compétences. Je joue par exemple à SimCity pour construire efficacement, World of Warcraft pour avoir la passion de découvrir, Satisfactory pour optimiser les systèmes et War Warhammer pour réfléchir à différentes stratégies.</p>
+            <div id="cv" class="lien-centre"><a href="Documents/alexandre-meunier/documents/CV%20Alexandre%20Meunier.pdf" class="lien">Mon CV</a></div>
           </div>
         </div>
       </div>
@@ -92,104 +99,110 @@
       </div>
       <div id="bloc-competences" class="apparition">
         <div>
-          <div>
-            <h3>Langages informatiques :</h3>
-            <div class="ligne-competences">
-              <div class="carte-competence">
-                <p>Python</p><!--Reseau social-->
-              </div>
-              <div class="carte-competence">
-                <p>Java</p><!--Ardoise magique-->
-              </div>
-              <div class="carte-competence">
-                <p>Go</p><!--stage-->
-              </div>
-              <div class="carte-competence">
-                <p>Bash</p><!--stage-->
-              </div>
-              <div class="carte-competence">
-                <p>Redis</p><!--stage-->
-              </div>
-              <div class="carte-competence">
-                <p>SQL</p><!--???-->
-              </div>
-              <div class="carte-competence">
-                <p>PHP</p><!--SAE 2-->
-              </div>
-              <div class="carte-competence">
-                <p>HTML</p><!--SAE 1-->
-              </div>
-              <div class="carte-competence">
-                <p>CSS</p><!--SAE 1-->
-              </div>
-              <div class="carte-competence">
-                <p>JS</p><!--SAE 2-->
-              </div>
+          <h3>Langages informatiques :</h3>
+          <div class="ligne-competences">
+            <div class="carte-competence">
+              <p>Python</p><!--Reseau social-->
             </div>
+            <div class="carte-competence">
+              <p>Go</p><!--stage-->
+            </div>
+            <div class="carte-competence">
+              <p>Java</p><!--Ardoise magique-->
+            </div>
+            <div class="carte-competence">
+              <p>Android</p><!--Ardoise magique-->
+            </div>
+            <div class="carte-competence">
+              <p>Bash</p><!--stage-->
+            </div>
+            <div class="carte-competence">
+              <p>Redis</p><!--stage-->
+            </div>
+            <div class="carte-competence">
+              <p>SQL</p><!--???-->
+            </div>
+            <div class="carte-competence">
+              <p>PHP</p><!--SAE 2-->
+            </div>
+            <div class="carte-competence">
+              <p>HTML</p><!--SAE 1-->
+            </div>
+            <div class="carte-competence">
+              <p>CSS</p><!--SAE 1-->
+            </div>
+            <div class="carte-competence">
+              <p>JS</p><!--SAE 2-->
+            </div>
+            <div class="carte-competence">
+              <p>Node.js</p>
+            </div>
+              <div class="carte-competence">
+                  <p>Vue.js</p>
+              </div>
+
           </div>
-          <div class="bar-vertical"></div>
-          <div>
-            <h3>Architecture logicielle :</h3>
-            <div class="ligne-competences">
-              <div class="carte-competence">
-                <p>API Restful</p><!--Stage-->
-              </div>
-              <div class="carte-competence">
-                <p>CI</p><!--Stage-->
-              </div>
-              <div class="carte-competence">
-                <p>Microservices</p><!--Stage-->
-              </div>
-              <div class="carte-competence">
-                <p>SSH</p><!--Stage-->
-              </div>
-              <div class="carte-competence">
-                <p>Pattern MVC</p><!--SAE 1-->
-              </div>
-              <div class="carte-competence">
-                <p>Tests unitaires</p>
-              </div>
+        </div>
+        <div>
+          <h3>Architecture logicielle :</h3>
+          <div class="ligne-competences">
+            <div class="carte-competence">
+              <p>API Restful</p><!--Stage-->
+            </div>
+            <div class="carte-competence">
+              <p>CI</p><!--Stage-->
+            </div>
+            <div class="carte-competence">
+              <p>Microservices</p><!--Stage-->
+            </div>
+            <div class="carte-competence">
+              <p>SSH</p><!--Stage-->
+            </div>
+            <div class="carte-competence">
+              <p>Pattern MVC</p><!--SAE 1-->
+            </div>
+            <div class="carte-competence">
+              <p>Tests unitaires</p>
             </div>
           </div>
         </div>
-        <div class="bar-vertical"></div>
         <div>
-          <div>
-            <h3>Outils de travail :</h3>
-            <div class="ligne-competences">
-              <div class="carte-competence">
-                <p>GitHub</p>
-              </div>
-              <div class="carte-competence">
-                <p>IDEs JetBrain</p>
-              </div>
-              <div class="carte-competence">
-                <p>Visual Studio Code</p>
-              </div>
-              <div class="carte-competence">
-                <p>Eclipse</p>
-              </div>
-              <div class="carte-competence">
-                <p>WinSCP</p>
-              </div>
+          <h3>Outils de travail :</h3>
+          <div class="ligne-competences">
+            <div class="carte-competence">
+              <p>GitHub</p>
+            </div>
+            <div class="carte-competence">
+              <p>GitLab</p>
+            </div>
+            <div class="carte-competence">
+              <p>IDEs JetBrain</p>
+            </div>
+            <div class="carte-competence">
+              <p>Visual Studio Code</p>
+            </div>
+            <div class="carte-competence">
+              <p>Eclipse</p>
+            </div>
+            <div class="carte-competence">
+              <p>WinSCP</p>
             </div>
           </div>
-          <div class="bar-vertical"></div>
-          <div>
-            <h3>Outils de communication :</h3>
-            <div class="ligne-competences">
-              <div class="carte-competence">
-                <p>Mattermost</p>
-              </div>
-              <div class="carte-competence">
-                <p>Google Drive</p>
-              </div>
-              <div class="carte-competence">
-                <p>Mail</p>
-              </div>
-              <div class="carte-competence">
-                <p>CRM</p>
-              </div>
+        </div>
+        <div>
+          <h3>Outils de communication :</h3>
+          <div class="ligne-competences">
+            <div class="carte-competence">
+              <p>Mattermost</p>
+            </div>
+            <div class="carte-competence">
+              <p>Google Drive</p>
+            </div>
+            <div class="carte-competence">
+              <p>Mail</p>
+            </div>
+            <div class="carte-competence">
+              <p>CRM</p>
             </div>
           </div>
         </div>
@@ -218,12 +231,12 @@
             <h2 class="titre-bloc">Réseau social</h2>
             <hr class="bar-titre-carte">
             <div class="info-parcours">
-              <h3 class="sous-titre">Objectif :</h3>
               <p>Développer un réseau social simple en Python</p>
-              <br>
-              <h3 class="sous-titre">Ce que j'ai fait :</h3>
-              <p>- Algorithme de recherche</p>
-              <p>- Dictionnaires et tableaux</p>
+              <p>--> Algorithme de recherche</p>
+              <p>--> Dictionnaires et tableaux</p>
+              <div class="competences-parcours">
+                <span>Python</span>
+              </div>
             </div>
           </div>
         </div>
@@ -232,27 +245,27 @@
             <h2 class="titre-bloc">L'ardoise magique</h2>
             <hr class="bar-titre-carte">
             <div class="info-parcours">
-              <h3 class="sous-titre">Objectif :</h3>
               <p>Développer des formes géométriques sur un plan 2D</p>
-              <br>
-              <h3 class="sous-titre">Ce que j'ai fait :</h3>
-              <p>- Polymorphisme, héritage, encapsulation</p>
-              <p>- Tests unitaires</p>
+              <p>--> Polymorphisme, héritage, encapsulation</p>
+              <div class="competences-parcours">
+                <span>Java / Tests unitaires / Eclipse</span>
+              </div>
             </div>
           </div>
         </div>
         <div class="parcours">
           <div class="carte">
-            <h2 class="titre-bloc">Développement web</h2>
+            <h2 class="titre-bloc"><a class="lien" href="https://jupyter.univ-paris13.fr/~12206971/PerformVision/">Développement web</a></h2>
             <hr class="bar-titre-carte">
             <div class="info-parcours">
-              <h3 class="sous-titre">Objectif :</h3>
               <p>Développement d'un site Internet</p>
-              <br>
-              <h3 class="sous-titre">Ce que j'ai fait :</h3>
-              <p>- Gestion de projet</p>
-              <p>- Recueil de besoins</p>
-              <p>- Développement front end et back end</p>
+              <p>--> Gestion de projet</p>
+              <p>--> Recueil de besoins</p>
+              <p>--> Développement front end et back end</p>
+              <div class="competences-parcours">
+                <span>HTML , CSS , JS, PHP, SQL /</span>
+                <span>Pattern MVC / VSCode , GitLab / GDrive</span>
+              </div>
             </div>
           </div>
         </div>
@@ -261,29 +274,43 @@
             <h2 class="titre-bloc">Optimisation web</h2>
             <hr class="bar-titre-carte">
             <div class="info-parcours">
-              <h3 class="sous-titre">Objectif :</h3>
               <p>Optimisation et debug du site créé dans Développement web</p>
-              <br>
-              <h3 class="sous-titre">Ce que j'ai fait :</h3>
-              <p>- Correction des bugs visuels du site</p>
-              <p>- Ajout de fonctionnalités manquantes</p>
-              <p>- Optimisation des controlleurs</p>
+              <p>--> Correction des bugs visuels du site</p>
+              <p>--> Ajout de fonctionnalités manquantes</p>
+              <p>--> Optimisation des controlleurs</p>
+              <div class="competences-parcours">
+                <span>HTML , CSS , JS , PHP , SQL /</span>
+                <span>Pattern MVC / PHPStorm , GitLab / GDrive</span>
+              </div>
             </div>
           </div>
         </div>
         <div class="parcours">
           <div class="carte">
-            <h2 class="titre-bloc">Orchestrateur de services</h2>
+            <h2 class="titre-bloc"><a class="lien" href="https://github.com/Alexandre-Meunier/om3">Orchestrateur de services</a></h2>
             <hr class="bar-titre-carte">
             <div class="info-parcours">
-              <h3 class="sous-titre">Objectif :</h3>
-              <p>Développement d'un logiciel au sein de mon stage </p>
-                <p>qui assure la haute disponibilité des services d'un groupe de serveurs.</p>
-              <br>
-              <h3 class="sous-titre">Ce que j'ai fait :</h3>
-              <p>- Création de gestionnaires d'API en Go</p>
-              <p>- Serveurs intégrant un daemon, Redis et une BDD</p>
-              <p>- Manipulation d'un daemon sous Linux</p>
+              <p>Développement d'un logiciel au sein de mon stage qui <br> assure la haute disponibilité des services d'un cluster.</p>
+              <p>--> Création de gestionnaires d'API</p>
+              <p>--> Serveurs intégrant un daemon, Redis et une BDD</p>
+              <div class="competences-parcours">
+                <span>Go , Bash , Redis / API Restful , CI, Microservices,</span>
+                <span>SSH / Goland, GitHub / Mattermost</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="parcours">
+          <div class="carte">
+            <h2 class="titre-bloc">Portfolio</h2>
+            <hr class="bar-titre-carte">
+            <div class="info-parcours">
+              <p>Développement du site d'un prénommé Alexandre Meunier</p>
+              <p>--> Me présenter</p>
+              <p>--> Rendre original le site</p>
+              <div class="competences-parcours">
+                <span>HTMl , CSS , JS / PHPStorm , GitHub</span>
+              </div>
             </div>
           </div>
         </div>
@@ -304,13 +331,15 @@
                 <div class="info-parcours">
                   <p>J'ai découvert le monde de l'entreprise en informatique en intégrant l'équipe <strong>OpenSVC</strong> dans l'encadrement d'un stage pendant 10 semaines. Située à Gouvieux dans l'Oise, cette entreprise développe un logiciel depuis 13 ans pour assurer la haute disponibilité des services d'une entreprise</p>
                   <p>Ainsi, j'ai pu m'intégrer dans un projet GitHub pour ajouter un gestionnaire d'API en Go pour influencer un daemon sous Linux développé par l'entreprise. J'ai pu apprendre le système de parallélisme du Go, le fonctionnement d'une API RESTful et d'un daemon</p>
-                  <p>J'ai pu rédiger un rapport sur mon stage, sur son déroulement et sur toutes les compétences que j'ai améliorées : <a href="documents/Rapport%20de%20stage.pdf" class="lien">Rapport de stage OpenSVC</a></p>
+                  <p>J'ai pu rédiger un rapport sur mon stage, sur son déroulement et sur toutes les compétences que j'ai améliorées : </p>
+                  <p class="lien-centre"><a href="Documents/alexandre-meunier/documents/Rapport%20de%20stage.pdf" class="lien">Rapport de stage OpenSVC</a></p>
                 </div>
               </div>
             </div>
           </div>
           <div id="section-job">
             <h1>Jobs étudiant :</h1>
+            <div class="column">
               <div class="parcours carte">
                 <div class="text-parcours">
                   <h3 class="titre-bloc">Carrefour (Octobre 2023-Aujourd'hui):</h3>
@@ -349,19 +378,23 @@
   <div id="footer" class="border-top">
     <div id="section-footer">
       <div id="footer-presentation">
-        <p>Alexandre Meunier</p>
+        <div id="titre-footer">
+          <h1>Alexandre Meunier</h1>
+          <div id="liens">
+            <a href="https://www.linkedin.com/in/alexandre-meunier-0366b9287/"><img id="icon-ln" src="Documents/alexandre-meunier/icon/général/linkedIn.png"></a>
+            <a href="https://github.com/Alexandre-Meunier"><img id="icon-git" src="Documents/alexandre-meunier/icon/général/github.png"></a>
+          </div>
+        </div>
         <hr>
-        <div class="coordonnees"><img id="icon-email" src="icon/général/email.jpeg"><span>alexandre.meunierpro@outlook.fr</span></div>
-        <div class="coordonnees"><img id="icon-tel" src="icon/général/telephone.png"><span>06 40 64 44 22</span></div>
-        <div class="coordonnees"><img id="icon-add" src="icon/général/maison.png"><span>32 bis rue Kleinpeter 95270 Viarmes</span></div>
-      </div>
-      <div id="liens">
-        <a href="https://www.linkedin.com/in/alexandre-meunier-0366b9287/"><img id="icon-ln" src="icon/général/linkedIn.png"></a>
-        <a href="https://github.com/Alexandre-Meunier"><img id="icon-git" src="icon/général/github.png"></a>
+        <div id="contact">
+          <p><strong>Me contacter</strong></p>
+          <div class="coordonnees"><img id="icon-email" src="Documents/alexandre-meunier/icon/général/email.jpeg"><span class="copier">alexandre.meunierpro@outlook.fr</span></div>
+          <div class="coordonnees"><img id="icon-tel" src="Documents/alexandre-meunier/icon/général/telephone.png"><span class="copier">06 40 64 44 22</span></div>
+        </div>
       </div>
     </div>
+    <p class="droits">Tous droits réservés</p>
   </div>
-  <script src="fonctions.js"></script>
-
+  <script src="Documents/alexandre-meunier/fonctions.js"></script>
   </body>
 </html>
