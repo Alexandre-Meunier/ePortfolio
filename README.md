@@ -3,27 +3,35 @@
 ### Général
 
 - Rendre le site dynamique
-- Créer une DA
-- Créer des types pour les compétences
-- Test bootstrap
-
-### En-tête
+- Rendre responsive en mode téléphone (surtout le background)
 
 ### Présentation du début
 
-- Changer la structure de ma présentation, trop basique, séparer le code et la présentation
-- Mettre du sombre sur le code, pour amplifier le gradient et bien séparer le code et le texte
-- idée : Faire passer la presentation par dessus le code comme si ca prennait la place
+- Modifier les textes de présentation
+- idée : Faire passer la presentation par dessus le code comme si ca prennait sa place
+- Mettre des petites fenetres avec une photo et une courte explication sur les jeux vidéos
+
+### Parcours
+
+- Modifier les textes
+- Ajouter des icônes dans le parcours
+- idée : faire comme un article, l'image a droite ou gauche et le texte fondu avec
 
 ### Compétences
 
 - Ajouter des images en SVG pour pouvoir les scalabler
+- Ajouter des icônes sur les compétences
 - Compétences renvoyants aux projets, avec une surbrillance
 - idée : Créer un filtre pour faire apparaitre les projets en conséquence
 
 ### Projets
 
+- Ajouter des icônes sur les projets
 - idée : Faire un lien avec les compétences
+
+### Footer
+
+- Encadrer ma partie
 
 Pour bootstrap :
 - https://bootswatch.com/
