@@ -7,9 +7,8 @@
 
 ### Présentation du début
 
-- Modifier les textes de présentation
 - idée : Faire passer la presentation par dessus le code comme si ca prennait sa place
-- Mettre des petites fenetres avec une photo et une courte explication sur les jeux vidéos
+- Mettre des petites fenêtres avec une photo et une courte explication sur les jeux vidéos
 
 ### Parcours
 
