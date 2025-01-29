@@ -13,7 +13,7 @@
 ### Parcours
 
 - Modifier les textes
-- Ajouter des icônes dans le parcours
+- Ajouter une image pour OSI et le BAC
 - idée : faire comme un article, l'image a droite ou gauche et le texte fondu avec
 
 ### Compétences
