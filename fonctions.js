@@ -1,3 +1,6 @@
+
+// Pour le FlashInput
+
 const inputBar = document.getElementById('inputBar');
 
 function flashingInputBar()  {
@@ -12,6 +15,9 @@ function flashingInputBar()  {
 }
 
 flashingInputBar();
+
+
+// Pour l'apparition
 
 document.addEventListener("DOMContentLoaded", function(){
     const elementsToShow = document.querySelectorAll('.apparition');
@@ -28,6 +34,10 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 })
 
+
+// Pour copier
+
+/* Pas utilisé
 document.addEventListener("DOMContentLoaded", function() {
     const copyTextSpans = document.querySelectorAll('.copier');
 
@@ -43,16 +53,21 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+*/
 
 function closePopup() {
     document.getElementById('popup').style.opacity = 0;
 }
 
-const projet = document.querySelectorAll('.projet');
+
+// Gérer les redirections des projets
+
+const projet = document.querySelectorAll('.redirect');
 
 projet.forEach((p)=>{
     p.addEventListener('click', function () {
         let titre = p.querySelector('.titre-projet').textContent
+        console.log(titre)
         switch (titre) {
             case "Perform Vision":
                 window.location.href = "https://jupyter.univ-paris13.fr/~12206971/PerformVision/"
