@@ -65,6 +65,14 @@ a.rubrique{
     }
 }
 
+@media (max-width: 768px) {
+    #middle,
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
 /*middle*/
 
 .popup {
@@ -148,16 +156,23 @@ a.rubrique{
 /*Section présentation*/
 
 #section-code{
+    margin-top: 75px;
+    margin-left: 15%;
     user-select: none;
     text-align: left;
     padding: 10px;
-    width: 80%;
+    width: 100%;
 }
 
 #bloc-code{
-    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     font-family: Consolas, serif;
     color: #87adbb;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
     .orange{
         color: #b47453;
     }
@@ -240,6 +255,22 @@ a.rubrique{
         margin-bottom: 0px;
     }
 
+
+}
+
+/* Pour : <a href="https://www.aikku.eu/"><img src="documents/images/parcours/aikku_logo.png" class="logo-inline"></a> */
+.logo-inline{
+    height: 1.3em; /* adapte la hauteur au texte environnant */
+    object-fit: contain; /* garantit un redimensionnement propre */
+    display: inline-block; /* pour mieux contrôler le comportement inline */
+}
+
+.logo{
+    text-decoration: none;
+    color: inherit;
+    &:hover{
+        color: #46B1E1;
+    }
 }
 
 #centre-interest{
@@ -382,18 +413,22 @@ a.rubrique{
     padding: 20px;
 }
 
-.img-parcours{
-    width: 20%;
-    overflow: hidden;
-    margin: 10px 15px 0 0;
-    &.left{
-        float: left;
-    }
-    &.right{
-        float: right;
-    }
-    img {
-        width: 100%;
+.text-parc{
+    display: flex;
+    align-items: center;
+    .img-parcours{
+        width: 50%;
+        overflow: hidden;
+        margin: 10px 15px 0 0;
+        &.left{
+            float: left;
+        }
+        &.right{
+            float: right;
+        }
+        img {
+            width: 100%;
+        }
     }
 }
 
@@ -457,7 +492,7 @@ a.rubrique{
 
 /* #section-projet */
 
-#section-projet{
+#list-projects{
     display: flex;
     justify-content: center;
 }

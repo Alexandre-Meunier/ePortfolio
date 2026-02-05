@@ -1,79 +1,90 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Alexandre Meunier</title>
-    <link rel="stylesheet" type="text/css" href="front2.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=consolas&display=swap" rel="stylesheet">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alexandre Meunier</title>
+  <link rel="stylesheet" type="text/css" href="front2.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=consolas&display=swap" rel="stylesheet">
+</head>
+<body>
 
-  <div class="popup apparition" id="popup">
-      <button class="close-btn" onclick="closePopup()">×</button>
-      <p id="text-popup">🚧Site en construction🚧</p>
+<header>
+  <div class="section-header">
+    <div id="pp">
+      <a href="">
+        <img id="ID-photo" src="documents/icon/general/photo_secondaire.jpeg" alt="fr"/>
+      </a>
+    </div>
+    <div id="section-rubrique">
+      <a class="rubrique" href="#section-presentation">Accueil</a>
+      <a class="rubrique" href="#section-parcours">Parcours</a>
+      <a class="rubrique" href="#section-competences">Compétences</a>
+      <a class="rubrique" href="#section-projet">Projets</a>
+      <a class="rubrique" href="#section-experience">Expériences</a>
+    </div>
+    <a class="rubrique" href="#footer">Me contacter</a><!--Renvoyer vers un formulaire-->
   </div>
+</header>
 
-  <header>
-    <div class="section-header">
-      <div id="pp">
-        <a href="">
-          <img id="ID-photo" src="documents/icon/general/photo_secondaire.jpeg" alt="fr"/>
-        </a>
-      </div>
-      <div id="section-rubrique">
-        <a class="rubrique" href="#section-presentation">Accueil</a>
-        <a class="rubrique" href="#section-parcours">Parcours</a>
-        <a class="rubrique" href="#section-competences">Compétences</a>
-        <a class="rubrique" href="#section-projet">Projets</a>
-        <a class="rubrique" href="#section-experience">Expériences</a>
-      </div>
-      <a class="rubrique" href="#footer">Me contacter</a><!--Renvoyer vers un formulaire-->
-    </div>
-  </header>
-
-  <div id="middle">
-    <div id="section-presentation">
-      <div id="section-code">
-        <div id="bloc-code" class="apparition"><!--Finir les couleurs-->
-          <p><span class="nbCode">1&emsp;</span><span class="orange">public class </span><span>EPortfolio </span>{</p><!--Essayer de faire bouger la parenthese après chaque texte-->
-          <p><span class="nbCode">2&emsp;</span>&emsp;&emsp;<span class="orange">public static void </span><span class="bleu">main</span>(String[] args) {</p>
-          <p><span class="nbCode">3&emsp;</span>&emsp;&emsp;&emsp;&emsp;<span>Developper</span> Alexandre_Meunier = <span class="orange">new</span> Developper(<span class="vert">'software'</span>);</p>
-          <p><span class="nbCode">4&emsp;</span>&emsp;&emsp;&emsp;&emsp;Alexandre_Meunier.AddPicture(<span class="vert">'img/picture'</span>);</p>
-          <p><span class="nbCode">5&emsp;</span>&emsp;&emsp;&emsp;&emsp;System.<span class="violet">out</span>.println(Alexandre_Meunier.getDescription);</p>
-          <p><span class="nbCode">6&emsp;</span>&emsp;&emsp;}</p>
-          <p><span class="nbCode">7&emsp;</span>}<span id="inputBar">|</span></p>
-        </div>
-      </div>
-      <div id="presentation" class="apparition">
-        <!--<h1 id="prenom-presentation">Alexandre Meunier</h1>-->
-        <div id="text-presentation">
-          <div id="img">
-            <img id="photo-presentation" src="documents/icon/photo_principale.jpg" alt="">
-          </div>
-          <div id="text-presentation-column">
-            <p>Je suis <strong>Alexandre Meunier</strong>, j'ai 20 ans et je suis étudiant à l'IUT de Villetaneuse à l’université Sorbonne Paris Nord en troisième année de BUT Informatique.</p>
-            <p>Ainsi, j’ai découvert une multitude de technologies du web, ainsi que du logiciel grâce aux projets que j’ai réalisés en BUT. De plus, durant mon stage dans le développement d’un logiciel, j’ai appris de nouvelles technologies et des méthodologies qui m’ont donné envie de continuer vers le développement logiciel.</p>
-            <p>Aujourd’hui, dans mes projets, j’essaye de découvrir des architectures et des systèmes différents pour élargir mes compétences dans le logiciel et dans l’optimisation.</p>
-            <hr style="height: 2px;border: none;background: #fff;width: 70%;margin-top: 30px;">
-          </div>
-        </div>
-        <p style="margin: 30px">Pour moi, un logiciel est comme un set Lego composé d'une multitude de briques placées de façon logique et méthodique pour avoir une architecture stable, optimisé et flexible. De plus, les jeux vidéo me permettent de me concentrer et d'améliorer certaines de mes compétences. Je joue par exemple à SimCity pour avoir une reflexion méthodique sur chaque action, World of Warcraft pour la passion de découvrir, Satisfactory pour l'optimisation des systèmes et War Warhammer pour réfléchir à différentes stratégies.</p>
+<div id="middle">
+  <div id="section-presentation">
+    <div id="section-code">
+      <div id="bloc-code" class="apparition"><!--Finir les couleurs-->
+        <span><span class="nbCode">1&emsp;</span><span class="orange">public class </span><span>EPortfolio </span>{</span><!--Essayer de faire bouger la parenthese après chaque texte-->
+        <span><span class="nbCode">2&emsp;</span>&emsp;&emsp;<span class="orange">public static void </span><span class="bleu">main</span>(String[] args) {</span>
+        <span><span class="nbCode">3&emsp;</span>&emsp;&emsp;&emsp;&emsp;<span>Developer</span> Alexandre_Meunier = <span class="orange">new</span> Developper(<span class="vert">'software'</span>);</span>
+        <span><span class="nbCode">4&emsp;</span>&emsp;&emsp;&emsp;&emsp;Alexandre_Meunier.AddPicture(<span class="vert">'img/picture'</span>);</span>
+        <span><span class="nbCode">5&emsp;</span>&emsp;&emsp;&emsp;&emsp;System.<span class="violet">out</span>.println(Alexandre_Meunier.getDescription());</span>
+        <span><span class="nbCode">6&emsp;</span>&emsp;&emsp;}</span>
+        <span><span class="nbCode">7&emsp;</span>}<span id="inputBar">|</span></span>
       </div>
     </div>
-    <div id="section-parcours" class="sections">
-      <div class="titre-section">
-        <h1>Mon parcours</h1>
+    <div id="presentation" class="apparition">
+      <!--<h1 id="prenom-presentation">Alexandre Meunier</h1>-->
+      <div id="text-presentation">
+        <div id="img">
+          <img id="photo-presentation" src="documents/icon/photo_principale.jpg" alt="">
+        </div>
+        <div id="text-presentation-column">
+          <p>Je suis actuellement apprentis ingénieur logiciel chez <a href="https://www.aikku.eu/" class="logo">Aikku</a> pour un diplôme d'ingénieur spécialité Système d'Information au CNAM de Paris.</p>
+          <p>Ainsi, j’ai découvert une multitude de technologies du web, ainsi que du logiciel grâce aux projets que j’ai réalisés en BUT. De plus, durant mes stage, j’ai appris de nouvelles technologies et des méthodologies, tel que le Golang et le Ruby On Rails qui m'ont permis d'approfondir mes connaissances en développement logiciel.</p>
+          <p>Aujourd’hui, dans mes projets, j’essaye de découvrir des architectures et des systèmes différents pour élargir mes compétences dans le logiciel et dans l’optimisation.</p>
+          <hr style="height: 2px;border: none;background: #fff;width: 70%;margin-top: 30px;">
+        </div>
       </div>
-      <div class="bloc apparition">
-        <div id="bloc-parcours" class="bloc-normal">
-          <div class="parcours carte">
-            <div>
-              <h2 class="titre-bloc">BUT Informatique (2022 - 2025)</h2>
-              <hr class="bar-titre-carte">
-              <div class="img-parcours left">
-                <img src="documents/icon/general/universite.png" alt="">
+      <p style="margin: 30px">Pour moi, un logiciel est comme un set Lego composé d'une multitude de briques placées de façon logique et méthodique pour avoir une architecture stable, optimisé et flexible. De plus, les jeux vidéo me permettent de me concentrer et d'améliorer certaines de mes compétences. Je joue par exemple à SimCity pour avoir une reflexion méthodique sur chaque action, World of Warcraft pour la passion de découvrir, Satisfactory pour l'optimisation des systèmes et War Warhammer pour réfléchir à différentes stratégies.</p>
+    </div>
+  </div>
+  <div id="section-parcours" class="sections">
+    <div class="titre-section">
+      <h1>Mon parcours</h1>
+    </div>
+    <div class="bloc apparition">
+      <div id="bloc-parcours" class="bloc-normal">
+        <div class="parcours carte">
+          <div>
+            <h2 class="titre-bloc">Diplôme d'ingénieur spécalité Système d'Information (2025 - 2028)</h2>
+            <hr class="bar-titre-carte">
+            <div class="text-parc">
+              <div class="img-parcours" style="width: 30%">
+                <img src="documents/images/parcours/cnam_logo.jpg" alt="">
+              </div>
+              <div class="info-parcours">
+                <p>Le diplôme d'ingénieur en préparation va me permettre d'avoir une polyvalence accrue et un esprit critique et d'analyse plus développés.</p>
+                <p>Ces 3 ans m'apporteront de multiples expériences, avec l'alternance chez Aikku, une mobilité internationale ainsi qu'un séjour linguistique dans une école en angleterre.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="parcours carte">
+          <div>
+            <h2 class="titre-bloc">BUT Informatique (2022 - 2025)</h2>
+            <hr class="bar-titre-carte">
+            <div class="text-parc">
+              <div class="img-parcours">
+                <img src="documents/images/parcours/universite.png" alt="">
               </div>
               <div class="info-parcours">
                 <p>Comme le BUT Informatique est pluridisciplinaire, j'ai pu toucher à la programmation de logiciels, d'applications mobiles et web, mais aussi à la gestion d'un projet, au droit du numérique, ainsi qu'au réseau et à l'architecture logiciel.</p>
@@ -81,299 +92,378 @@
               </div>
             </div>
           </div>
-          <div class="parcours carte">
-            <h2 class="titre-bloc">Concours des Olympiades de Sciences de l’Ingénieur (2021 - 2022)</h2>
-            <hr class="bar-titre-carte">
+        </div>
+        <div class="parcours carte">
+          <h2 class="titre-bloc">Concours des Olympiades de Sciences de l’Ingénieur (2021 - 2022)</h2>
+          <hr class="bar-titre-carte">
+          <div class="text-parc">
+            <div class="img-parcours left">
+              <img src="documents/images/parcours/osi.jpg" alt="">
+            </div>
             <div class="info-parcours">
               <p>Pendant ma deuxième année en STI2D, j'ai pu intégrer une équipe composée de 3 élèves de mon lycée sur le développement d'un projet pour le concours de l'Olympiade de Science de l'ingénieur qui a rassemblé des élèves de la filière SI et STI2D venant de toute la France en 2022 chez <a href="https://www.thalesgroup.com/fr" class="lien">Thalès</a> à Vélizy.</p>
               <p>Autour du thème de "l’ingénierie au service de la mobilité", nous avons développé et présenté un projet sur le déplacement d'un drone alimenté par des caténaires et pouvant porter des outils afin de faciliter le travail des ouvriers dans les zones difficiles d'accès.</p>
             </div>
           </div>
-          <div class="parcours carte">
-            <h2 class="titre-bloc">Baccalauréat technologique STI2D (2020 - 2022)</h2>
-            <hr class="bar-titre-carte">
+        </div>
+        <div class="parcours carte">
+          <h2 class="titre-bloc">Baccalauréat technologique STI2D (2020 - 2022)</h2>
+          <hr class="bar-titre-carte">
+          <div class="text-parc">
+            <div class="img-parcours left">
+              <img src="documents/images/parcours/sarcelles.jpg" alt="">
+            </div>
             <div class="info-parcours">
-              <p>Les années du BAC au lycée <a href="https://lpo-maryse-conde.fr/" class="lien">Maryse Condé</a> (anciennement La Tourelle) à Sarcelles (95) m'ont permis de découvrir le développement de projets autour de l'informatique, de la conception. En effet, les projets en STI2D ont demandé de concevoir des objets touchant la robotique et de connaître les bases de la programmation avec le langage Arduino.</p>
+              <p>Les années du BAC au lycée Maryse Condé (anciennement La Tourelle) à Sarcelles (95) m'ont permis de découvrir le développement de projets autour de l'informatique, de la conception. En effet, les projets en STI2D ont demandé de concevoir des objets touchant la robotique et de connaître les bases de la programmation avec le langage Arduino.</p>
               <p>C'est dans une optique de vouloir apporter à un programme un algorithme efficace et la volonté d'apprendre que j'ai choisi le BUT Informatique pour mon cursus post-bac.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="section-competences" class="sections border-top">
-      <div class="titre-section">
-        <h1>Mes compétences</h1>
-      </div>
-      <div id="bloc-competences" class="apparition">
-        <div class="ligne-competences">
-          <div class="carte-competence">
-            <img src="documents/svg/python.svg" alt="">
-            <p>Python</p>
-          </div>
-          <div class="carte-competence">
-            <img src="documents/svg/go.svg" alt="">
-            <p>Go</p>
-          </div>
-          <div class="carte-competence">
-            <img src="documents/svg/java.svg" alt="">
-            <p>Java</p>
-          </div>
-          <div class="carte-competence">
-            <img src="documents/svg/android.svg" alt="">
-            <p>Android</p>
-          </div>
-          <div class="carte-competence">
-            <img src="documents/svg/php.svg" alt="">
-            <p>PHP</p>
-          </div>
-          <div class="carte-competence">
-            <img src="documents/svg/html.svg" alt="">
-            <p>HTML</p>
-          </div>
-          <div class="carte-competence">
-            <img src="documents/svg/css.svg" alt="" width="16" height="16">
-            <p>CSS</p>
-          </div>
-          <div class="carte-competence">
-            <img src="documents/svg/js.svg" alt="">
-            <p>JS</p>
-          </div>
-          <div class="carte-competence">
-            <img src="documents/svg/sql.svg" alt="">
-            <p>SQL</p>
-          </div>
-          <div class="carte-competence">
-            <img src="documents/svg/redis.svg" alt="">
-            <p>Redis</p>
-          </div>
-          <div class="carte-competence">
-            <img src="documents/svg/mongodb.svg" alt="">
-            <p>MongoDB</p>
-          </div>
-          <div class="carte-competence">
-            <img src="documents/svg/bash.svg" alt="">
-            <p>Bash</p>
-          </div>
-          <div class="carte-competence">
-            <img style="padding-top:10px" src="documents/svg/docker.svg" alt="">
-            <p>Docker</p>
-          </div>
-          <div class="carte-competence">
-            <img src="documents/svg/rest-api.svg" alt="">
-            <p>API REST</p>
-          </div>
-          <div class="carte-competence">
-            <img style="" src="documents/svg/laravel.svg" alt="">
-            <p>Laravel</p>
-          </div>
+  </div>
+  <div id="section-competences" class="sections border-top">
+    <div class="titre-section">
+      <h1>Mes compétences</h1>
+    </div>
+    <div id="bloc-competences" class="apparition">
+      <div class="ligne-competences">
+        <div class="carte-competence">
+          <img src="documents/svg/rails.svg" alt="">
+          <p>Ruby On Rails</p>
+        </div>
+        <div class="carte-competence">
+          <img src="documents/svg/java.svg" alt="">
+          <p>Java</p>
+        </div>
+        <div class="carte-competence">
+          <img src="documents/svg/go.svg" alt="">
+          <p>Go</p>
+        </div>
+        <div class="carte-competence">
+          <img src="documents/svg/php.svg" alt="">
+          <p>PHP</p>
+        </div>
+        <div class="carte-competence">
+          <img src="documents/svg/js.svg" alt="">
+          <p>JS</p>
+        </div>
+        <div class="carte-competence">
+          <img src="documents/svg/sql.svg" alt="">
+          <p>SQL</p>
+        </div>
+        <div class="carte-competence">
+          <img src="documents/svg/bash.svg" alt="">
+          <p>Bash</p>
+        </div>
+        <div class="carte-competence">
+          <img src="documents/svg/redis.svg" alt="">
+          <p>Redis</p>
+        </div>
+        <div class="carte-competence">
+          <img src="documents/svg/html.svg" alt="">
+          <p>HTML</p>
+        </div>
+        <div class="carte-competence">
+          <img src="documents/svg/css.svg" alt="">
+          <p>CSS</p>
+        </div>
+        <div class="carte-competence">
+          <img src="documents/svg/mongodb.svg" alt="">
+          <p>MongoDB</p>
+        </div>
+        <div class="carte-competence">
+          <img src="documents/svg/python.svg" alt="">
+          <p>Python</p>
+        </div>
+        <div class="carte-competence">
+          <img style="padding-top:10px" src="documents/svg/docker.svg" alt="">
+          <p>Docker</p>
+        </div>
+        <div class="carte-competence">
+          <img src="documents/svg/rest-api.svg" alt="">
+          <p>API REST</p>
+        </div>
+        <div class="carte-competence">
+          <img style="" src="documents/svg/laravel.svg" alt="">
+          <p>Laravel</p>
+        </div>
+
+        <div class="carte-competence">
+          <img src="documents/svg/android.svg" alt="">
+          <p>Android</p>
         </div>
       </div>
-      <hr style="width: 70%; margin:50px">
-      <div id="section-projet" class=""><!--Pouvoir trier par compétence-->
-        <div class="ligne-projet apparition">
-          <div class="projet">
-            <img class="img-project" src="documents/images/projets/python.jpg" height="135" width="135"/>
-            <div class="contenue-project">
-              <div class="bloc-description">
-                <div class="bloc-titre-projet">
-                  <h2 class="titre-projet">Réseau social</h2><span>(Binôme)</span>
-                </div>
-                <div class="description">
-                  <p>Développer un réseau social simple en Python</p>
-                </div>
+    </div>
+    <hr style="width: 70%; margin:50px">
+    <div id="section-projet" class="titre-section" style="scroll-margin-top: 55px;">
+      <h1>Mes Projets</h1>
+    </div>
+    <div id="list-projects" class=""><!--Pouvoir trier par compétence-->
+      <div class="ligne-projet apparition">
+        <div class="projet">
+          <img class="img-project" src="documents/images/projets/python.jpg" height="135" width="135"/>
+          <div class="contenue-project">
+            <div class="bloc-description">
+              <div class="bloc-titre-projet">
+                <h2 class="titre-projet">Réseau social</h2><span>(Binôme)</span>
               </div>
-              <div class="competences-projet">
-                <div class="competences-spe">
-                  <p>Algorithme</p>
-                  <p style="background-color: #2e5c46;">Données</p>
-                </div>
-                <div class="img-competence">
-                  <img src="documents/svg/python.svg" alt="Python" title="Python">
-                </div>
+              <div class="description">
+                <p>Développer un réseau social simple en Python</p>
+              </div>
+            </div>
+            <div class="competences-projet">
+              <div class="competences-spe">
+                <p>Algorithme</p>
+                <p style="background-color: #2e5c46;">Données</p>
+              </div>
+              <div class="img-competence">
+                <img src="documents/svg/python.svg" alt="Python" title="Python">
               </div>
             </div>
           </div>
-          <div class="projet redirect">
-            <img class="img-project" src="documents/images/projets/ardoise2.png" height="135" width="135"/>
-            <div class="contenue-project">
-              <div class="bloc-description">
-                <div class="bloc-titre-projet">
-                  <h2 class="titre-projet">L'ardoise magique</h2><span>(Binôme)</span>
-                </div>
-                <div class="description">
-                  <p>Développer des formes géométriques sur un plan 2D</p>
-                </div>
+        </div>
+        <div class="projet redirect">
+          <img class="img-project" src="documents/images/projets/ardoise2.png" height="135" width="135"/>
+          <div class="contenue-project">
+            <div class="bloc-description">
+              <div class="bloc-titre-projet">
+                <h2 class="titre-projet">L'ardoise magique</h2><span>(Binôme)</span>
               </div>
-              <div class="competences-projet">
-                <div class="competences-spe">
-                  <p>Héritage</p>
-                  <p style="background-color: #2e5c46;">Encapsulation</p>
-                  <p style="background-color: #3c2e5c;">Polymorphisme</p>
-                </div>
-                <div class="img-competence">
-                  <img src="documents/svg/java.svg" alt="Java" title="Java">
-                </div>
+              <div class="description">
+                <p>Développer des formes géométriques sur un plan 2D</p>
+              </div>
+            </div>
+            <div class="competences-projet">
+              <div class="competences-spe">
+                <p>Héritage</p>
+                <p style="background-color: #2e5c46;">Encapsulation</p>
+                <p style="background-color: #3c2e5c;">Polymorphisme</p>
+              </div>
+              <div class="img-competence">
+                <img src="documents/svg/java.svg" alt="Java" title="Java">
               </div>
             </div>
           </div>
-          <div class="projet redirect">
-            <img class="img-project" src="documents/images/projets/performvision.png" height="135" width="135"/>
-            <div class="contenue-project">
-              <div class="bloc-description">
-                <div class="bloc-titre-projet">
-                  <h2 class="titre-projet">Perform Vision</h2><span>(Groupe de 5)</span>
-                </div>
-                <div class="description">
-                  <p>Développement d'un site Internet</p>
-                </div>
+        </div>
+        <div class="projet">
+          <img class="img-project" src="documents/images/projets/performvision.png" height="135" width="135"/>
+          <div class="contenue-project">
+            <div class="bloc-description">
+              <div class="bloc-titre-projet">
+                <h2 class="titre-projet">Perform Vision</h2><span>(Groupe de 5)</span>
               </div>
-              <div class="competences-projet">
-                <div class="competences-spe">
-                  <p>Recueil de besoin</p>
-                  <p style="background-color: #2e5c46;">Gestion de projet</p>
-                  <p style="background-color: #3c2e5c;">Architecture MVC</p>
-                </div>
-                <div class="img-competence">
-                  <img src="documents/svg/html.svg" alt="Html" title="Html">
-                  <img src="documents/svg/css.svg" alt="Css" title="Css">
-                  <img src="documents/svg/js.svg" alt="Js" title="Js">
-                  <img src="documents/svg/php.svg" alt="Php" title="Php">
-                  <img src="documents/svg/sql.svg" alt="Sql" title="Sql">
-                </div>
+              <div class="description">
+                <p>Développement d'un site Internet</p>
+              </div>
+            </div>
+            <div class="competences-projet">
+              <div class="competences-spe">
+                <p>Recueil de besoin</p>
+                <p style="background-color: #2e5c46;">Gestion de projet</p>
+                <p style="background-color: #3c2e5c;">Architecture MVC</p>
+              </div>
+              <div class="img-competence">
+                <img src="documents/svg/html.svg" alt="Html" title="Html">
+                <img src="documents/svg/css.svg" alt="Css" title="Css">
+                <img src="documents/svg/js.svg" alt="Js" title="Js">
+                <img src="documents/svg/php.svg" alt="Php" title="Php">
+                <img src="documents/svg/sql.svg" alt="Sql" title="Sql">
               </div>
             </div>
           </div>
-          <div class="projet">
-            <img class="img-project" src="documents/images/projets/fearless.png" height="135" width="135"/>
-            <div class="contenue-project">
-              <div class="bloc-description">
-                <div class="bloc-titre-projet">
-                  <h2 class="titre-projet">Optimisation web</h2><span>(Groupe de 4)</span>
-                </div>
-                <div class="description">
-                  <p>Optimisation et debug d'un site créé dans le S3</p>
-                </div>
+        </div>
+        <div class="projet">
+          <img class="img-project" src="documents/images/projets/fearless.png" height="135" width="135"/>
+          <div class="contenue-project">
+            <div class="bloc-description">
+              <div class="bloc-titre-projet">
+                <h2 class="titre-projet">Optimisation web</h2><span>(Groupe de 4)</span>
               </div>
-              <div class="competences-projet">
-                <div class="competences-spe">
-                  <p>Optimisation</p>
-                  <p style="background-color: #2e5c46;">Gestion de projet</p>
-                </div>
-                <div class="img-competence">
-                  <img src="documents/svg/html.svg" alt="Html" title="Html">
-                  <img src="documents/svg/css.svg" alt="Css" title="Css">
-                  <img src="documents/svg/js.svg" alt="Js" title="Js">
-                  <img src="documents/svg/php.svg" alt="Php" title="Php">
-                  <img src="documents/svg/sql.svg" alt="Sql" title="Sql">
-                </div>
+              <div class="description">
+                <p>Optimisation et debug d'un site créé dans le S3</p>
+              </div>
+            </div>
+            <div class="competences-projet">
+              <div class="competences-spe">
+                <p>Optimisation</p>
+                <p style="background-color: #2e5c46;">Gestion de projet</p>
+                <p style="background-color: #3c2e5c;">Sécurité des données</p>
+              </div>
+              <div class="img-competence">
+                <img src="documents/svg/html.svg" alt="Html" title="Html">
+                <img src="documents/svg/css.svg" alt="Css" title="Css">
+                <img src="documents/svg/js.svg" alt="Js" title="Js">
+                <img src="documents/svg/php.svg" alt="Php" title="Php">
+                <img src="documents/svg/sql.svg" alt="Sql" title="Sql">
               </div>
             </div>
           </div>
-          <div class="projet redirect">
-            <img class="img-project" src="documents/images/projets/opensvc.png" height="135" width="135"/>
-            <div class="contenue-project">
-              <div class="bloc-description">
-                <div class="bloc-titre-projet">
-                  <h2 class="titre-projet">Orchestrateur de services</h2><span>(Stage)</span>
-                </div>
-                <div class="description">
-                  <p>Développement d'un logiciel au sein de mon stage assurant la haute disponibilité des services d'un cluster.</p>
-                </div>
+        </div>
+        <div class="projet redirect">
+          <img class="img-project" src="documents/images/projets/opensvc.png" height="135" width="135"/>
+          <div class="contenue-project">
+            <div class="bloc-description">
+              <div class="bloc-titre-projet">
+                <h2 class="titre-projet">Orchestrateur de services</h2><span>(Stage)</span>
               </div>
-              <div class="competences-projet">
-                <div class="competences-spe">
-                  <p>GitHub</p>
-                  <p style="background-color: #2e5c46;">Structuration de données</p>
-                  <p style="background-color: #3c2e5c;">Travail en équipe</p>
-                </div>
-                <div class="img-competence">
-                  <img src="documents/svg/go.svg" alt="Go" title="Go">
-                  <img src="documents/svg/bash.svg" alt="Bash" title="Bash">
-                  <img src="documents/svg/redis.svg" alt="Redis" title="Redis">
-                  <img src="documents/svg/rest-api.svg" alt="API rest" title="API rest">
-                </div>
+              <div class="description">
+                <p>Développement d'un logiciel au sein de mon stage assurant la haute disponibilité des services d'un cluster.</p>
+              </div>
+            </div>
+            <div class="competences-projet">
+              <div class="competences-spe">
+                <p>GitHub</p>
+                <p style="background-color: #2e5c46;">Structuration de données</p>
+                <p style="background-color: #3c2e5c;">Travail en équipe</p>
+              </div>
+              <div class="img-competence">
+                <img src="documents/svg/go.svg" alt="Go" title="Go">
+                <img src="documents/svg/bash.svg" alt="Bash" title="Bash">
+                <img src="documents/svg/redis.svg" alt="Redis" title="Redis">
+                <img src="documents/svg/rest-api.svg" alt="API rest" title="API rest">
               </div>
             </div>
           </div>
-          <div class="projet redirect">
-            <img class="img-project" src="documents/images/projets/portfolio.png" height="135" width="135"/>
-            <div class="contenue-project">
-              <div class="bloc-description">
-                <div class="bloc-titre-projet">
-                  <h2 class="titre-projet">Portfolio</h2>
-                </div>
-                <div class="description">
-                  <p>Développement de mon propre site pour me présenter.</p>
-                </div>
+        </div>
+        <div class="projet redirect">
+          <img class="img-project" src="documents/images/projets/portfolio.png" height="135" width="135"/>
+          <div class="contenue-project">
+            <div class="bloc-description">
+              <div class="bloc-titre-projet">
+                <h2 class="titre-projet">Portfolio</h2>
               </div>
-              <div class="competences-projet">
-                <div class="competences-spe">
-                  <p>Compréhension de soi</p>
-                  <p style="background-color: #2e5c46;">Communication écrite</p>
-                  <p style="background-color: #3c2e5c;">Créativité</p>
-                </div>
-                <div class="img-competence">
-                  <img src="documents/svg/html.svg" alt="Html" title="Html">
-                  <img src="documents/svg/css.svg" alt="Css" title="Css">
-                  <img src="documents/svg/js.svg" alt="Js" title="Js">
-                </div>
+              <div class="description">
+                <p>Développement de mon propre site pour me présenter.</p>
+              </div>
+            </div>
+            <div class="competences-projet">
+              <div class="competences-spe">
+                <p>Compréhension de soi</p>
+                <p style="background-color: #2e5c46;">Communication écrite</p>
+                <p style="background-color: #3c2e5c;">Créativité</p>
+              </div>
+              <div class="img-competence">
+                <img src="documents/svg/html.svg" alt="Html" title="Html">
+                <img src="documents/svg/css.svg" alt="Css" title="Css">
+                <img src="documents/svg/js.svg" alt="Js" title="Js">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projet redirect">
+          <img class="img-project" src="documents/images/projets/letmecook.png" height="135" width="135"/>
+          <div class="contenue-project">
+            <div class="bloc-description">
+              <div class="bloc-titre-projet">
+                <h2 class="titre-projet">LetMeCook</h2>
+              </div>
+              <div class="description">
+                <p>Développement d'une application contenant un sélecteur de plats.</p>
+              </div>
+            </div>
+            <div class="competences-projet">
+              <div class="competences-spe">
+                <p>Algorithme</p>
+                <p style="background-color: #2e5c46;">Gestion de projet</p>
+                <p style="background-color: #3c2e5c;">Framework</p>
+              </div>
+              <div class="img-competence">
+                <img src="documents/svg/laravel.svg" alt="Laravel" title="Laravel">
+                <img src="documents/svg/sql.svg" alt="Sql" title="Sql">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projet redirect">
+          <img class="img-project" src="documents/images/projets/tech-chips.png" height="135" width="135"/>
+          <div class="contenue-project">
+            <div class="bloc-description">
+              <div class="bloc-titre-projet">
+                <h2 class="titre-projet">TechChips</h2>
+              </div>
+              <div class="description">
+                <p>Réalisation d'un podcast sur les enjeux politiques de l'IA.</p>
+                <br>
+                <p class="plus" onclick="event.stopPropagation()">En savoir plus ...</p>
+              </div>
+            </div>
+            <div class="competences-projet">
+              <div class="competences-spe">
+                <p>Veille technologique</p>
+                <p style="background-color: #2e5c46;">Rédaction</p>
+                <p style="background-color: #3c2e5c;">Gantt</p>
+              </div>
+              <div class="img-competence">
+
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="section-experience" class="sections border-top"><!--Pouvoir choisir entre stage-alternance et jobs étudiant-->
-      <div class="titre-section">
-        <h1>Mes expériences professionnelles</h1>
-      </div>
-      <div class="bloc apparition">
-        <div class="bloc-normal">
-          <div>
-            <h1>Stage :</h1>
+  </div>
+  <div id="section-experience" class="sections border-top"><!--Pouvoir choisir entre stage-alternance et jobs étudiant-->
+    <div class="titre-section">
+      <h1>Mes expériences professionnelles</h1>
+    </div>
+    <div class="bloc apparition">
+      <div class="bloc-normal">
+        <div id="section-stages-alternances" class="column">
+          <h1>Stages/Alternances :</h1>
+          <div class="parcours carte">
+            <div class="text-parcours">
+              <h3 class="titre-bloc">Aikku (2025 (Stage) / 2025 - 2028 (Alternance)):</h3>
+              <hr class="bar-titre-carte">
+              <div class="info-parcours">
+                <p>J'ai intégré <a href="https://www.aikku.eu/" class="logo"><strong>Aikku</strong></a> durant mon stage de 4 mois en 3ème année de BUT, puis j'ai été accepté pour un contrat de 3 ans en alternance au CNAM.</p>
+                <p>Mes travaux consistent à développer et à apporter de nouvelles fonctionnalités à des logiciels, tel que pour l'IAE de Paris, <a href="https://www.aikku.eu/fr/aikku_plann" class="logo"><strong>Aikku Plann</strong></a>, sur la gestion de toutes les ressources de l'établissement de formation, en passant par les cours, jusqu'à la gestion de l'assiduité des élèves.
+                <p>Je travaille aussi sur le logiciel <a href="https://www.coopcomm.fr/" class="logo"><strong>CoopComm</strong></a>, permettant la gestion des interventions de communautés de communes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="parcours carte">
+            <div class="text-parcours">
+              <h3 class="titre-bloc">OpenSVC (Janvier 2024 - Mars 2024):</h3>
+              <hr class="bar-titre-carte">
+              <div class="info-parcours">
+                <p>J'ai découvert le monde de l'entreprise en informatique en intégrant l'équipe <a href="https://www.opensvc.com/" class="logo"><strong>OpenSVC</strong></a> dans l'encadrement d'un stage pendant 10 semaines. Située à Gouvieux dans l'Oise, cette entreprise développe un logiciel depuis 13 ans pour assurer la haute disponibilité des services d'une entreprise.</p>
+                <p>Ainsi, j'ai intégré un projet open source sur GitHub pour développer un gestionnaire d'API en Go pour influencer un daemon sous Linux. J'ai appris le système de parallélisme du Go, le fonctionnement d'une API RESTful et d'un daemon Linux.</p>
+                <p>J'ai rédigé un rapport sur mon stage, sur son déroulement et sur toutes les compétences que j'ai améliorées : </p>
+                <p class="lien-centre"><a href="documents/Rapport%20de%20stage%20OpenSVC.pdf" class="lien">Rapport de stage OpenSVC</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="section-job">
+          <h1>Jobs étudiant :</h1>
+          <div class="column">
             <div class="parcours carte">
               <div class="text-parcours">
-                <h3 class="titre-bloc">OpenSVC (Janvier 2024-Mars 2024):</h3>
+                <h3 class="titre-bloc">Carrefour (Octobre 2023-Septembre 2024):</h3>
                 <hr class="bar-titre-carte">
                 <div class="info-parcours">
-                  <p>J'ai découvert le monde de l'entreprise en informatique en intégrant l'équipe <strong>OpenSVC</strong> dans l'encadrement d'un stage pendant 10 semaines. Située à Gouvieux dans l'Oise, cette entreprise développe un logiciel depuis 13 ans pour assurer la haute disponibilité des services d'une entreprise.</p>
-                  <p>Ainsi, j'ai intégré un projet open source sur GitHub pour développer un gestionnaire d'API en Go pour influencer un daemon sous Linux. J'ai appris le système de parallélisme du Go, le fonctionnement d'une API RESTful et d'un daemon Linux.</p>
-                  <p>J'ai rédigé un rapport sur mon stage, sur son déroulement et sur toutes les compétences que j'ai améliorées : </p>
-                  <p class="lien-centre"><a href="documents/Rapport%20de%20stage%20OpenSVC.pdf" class="lien">Rapport de stage OpenSVC</a></p>
+                  <p>À côté de mes études, j'exerçais le métier de caissier au <strong>Carrefour</strong> de Luzarches (95). J'ai amélioré ma polyvalence, à gérer les clients à ma caisse et à traiter rapidement les problèmes.</p>
                 </div>
               </div>
             </div>
-          </div>
-          <div id="section-job">
-            <h1>Jobs étudiant :</h1>
-            <div class="column">
-              <div class="parcours carte">
-                <div class="text-parcours">
-                  <h3 class="titre-bloc">Carrefour (Octobre 2023-Septembre 2024):</h3>
-                  <hr class="bar-titre-carte">
-                  <div class="info-parcours">
-                    <p>À côté de mes études, j'exerçais le métier de caissier au <strong>Carrefour</strong> de Luzarches (95). J'ai amélioré ma polyvalence, à gérer les clients à ma caisse et à traiter rapidement les problèmes.</p>
-                  </div>
+            <div class="parcours carte">
+              <div class="text-parcours">
+                <h3 class="titre-bloc">McDonald's (Août 2023-Septembre 2023):</h3>
+                <hr class="bar-titre-carte">
+                <div class="info-parcours">
+                  <p>J'ai continué mes jobs étudiants en tant qu'équipier dans le <strong>McDonald's</strong> de l'Isle-Adam (95). En travaillant sur la préparation des commandes des clients, j'ai pu améliorer ma rapidité, ma prise d'initiative ainsi que ma cohésion dans une équipe.</p>
+                  <p>De plus, il fallait s'adapter rapidement aux changements dans les commandes, sur les demandes des clients, et sur le changement de poste.</p>
                 </div>
               </div>
-              <div class="parcours carte">
-                <div class="text-parcours">
-                  <h3 class="titre-bloc">McDonald's (Août 2023-Septembre 2023):</h3>
-                  <hr class="bar-titre-carte">
-                  <div class="info-parcours">
-                    <p>J'ai continué mes jobs étudiants en tant qu'équipier dans le <strong>McDonald's</strong> de l'Isle-Adam (95). En travaillant sur la préparation des commandes des clients, j'ai pu améliorer ma rapidité, ma prise d'initiative ainsi que ma cohésion dans une équipe.</p>
-                    <p>De plus, il fallait s'adapter rapidement aux changements dans les commandes, sur les demandes des clients, et sur le changement de poste.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="parcours carte">
-                <div class="text-parcours">
-                  <h3 class="titre-bloc">Garage Pacemaker (Juin 2022-Juillet 2022):</h3>
-                  <hr class="bar-titre-carte">
-                  <div class="info-parcours">
-                    <p>Mon tout premier job étudiant s'est passé dans le <strong>Garage Pacemaker</strong> situé à Champagne sur Oise (95). J'ai pu exercer le métier de secrétaire dans le garage appartenant à mon frère Sébastien Meunier.</p>
-                    <p>Ainsi, j'ai géré la clientèle, la prise de rendez-vous via un téléphone ou directement sur place. Suite à cela, j'ai pu gérer les devis, les factures mais aussi la gestion des stocks et du planning des employés</p>
-                  </div>
+            </div>
+            <div class="parcours carte">
+              <div class="text-parcours">
+                <h3 class="titre-bloc">Garage Pacemaker (Juin 2022-Juillet 2022):</h3>
+                <hr class="bar-titre-carte">
+                <div class="info-parcours">
+                  <p>Mon tout premier job étudiant s'est passé dans le <strong>Garage Pacemaker</strong> situé à Champagne sur Oise (95). J'ai pu exercer le métier de secrétaire dans le garage appartenant à mon frère Sébastien Meunier.</p>
+                  <p>Ainsi, j'ai géré la clientèle, la prise de rendez-vous via un téléphone ou directement sur place. Suite à cela, j'ai pu gérer les devis, les factures mais aussi la gestion des stocks et du planning des employés</p>
                 </div>
               </div>
             </div>
@@ -382,27 +472,28 @@
       </div>
     </div>
   </div>
-  <div id="footer" class="border-top">
-    <div id="section-footer">
-      <div id="footer-presentation">
-        <div id="titre-footer">
-          <h1>Alexandre Meunier</h1>
-          <div id="liens">
-            <a href="https://www.linkedin.com/in/alexandre-meunier-0366b9287/"><img id="icon-ln" src="documents/icon/general/linkedIn.png" alt=""></a>
-            <a href="https://github.com/Alexandre-Meunier"><img id="icon-git" src="documents/icon/general/github.png" style="" alt=""></a>
-          </div>
-        </div>
-        <hr>
-        <div id="contact">
-          <p><strong>Me contacter</strong></p>
-          <div class="coordonnees"><img id="icon-email" src="documents/icon/general/email.jpeg" alt=""><span class="copier">alexandre.meunierpro@outlook.fr</span></div>
-          <div class="coordonnees"><img id="icon-tel" src="documents/icon/general/telephone.png" alt=""><span class="copier">06 40 64 44 22</span></div>
-          <div class="coordonnees"><img src="documents/svg/trombonne_CV.svg" height="20" width="20" alt=""><a href=documents/CV%20Alexandre%20Meunier.pdf class="lien">Mon CV</a></div>
+</div>
+<div id="footer" class="border-top">
+  <div id="section-footer">
+    <div id="footer-presentation">
+      <div id="titre-footer">
+        <h1>Alexandre Meunier</h1>
+        <div id="liens">
+          <a href="https://www.linkedin.com/in/alexandre-meunier-0366b9287/"><img id="icon-ln" src="documents/icon/general/linkedIn.png" alt=""></a>
+          <a href="https://github.com/Alexandre-Meunier"><img id="icon-git" src="documents/icon/general/github.png" style="" alt=""></a>
         </div>
       </div>
+      <hr>
+      <div id="contact">
+        <p><strong>Me contacter</strong></p>
+        <div class="coordonnees"><img id="icon-email" src="documents/icon/general/email.jpeg" alt=""><span class="copier">alexandre.meunierpro@outlook.fr</span></div>
+        <div class="coordonnees"><img id="icon-tel" src="documents/icon/general/telephone.png" alt=""><span class="copier">06 40 64 44 22</span></div>
+        <div class="coordonnees"><img src="documents/svg/trombonne_CV.svg" height="20" width="20" alt=""><a href=documents/CV%20Alexandre%20Meunier.pdf class="lien">Mon CV</a></div>
+      </div>
     </div>
-    <p class="droits">Tous droits réservés</p>
   </div>
-  <script src="fonctions.js"></script>
-  </body>
+  <p class="droits">Tous droits réservés</p>
+</div>
+<script src="fonctions.js"></script>
+</body>
 </html>
