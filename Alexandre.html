@@ -12,14 +12,12 @@
 <body>
 
 <!-- Header -->
-<header class="bg-red">
+<header>
   <div class="flex justify-center my-2">
     <div class="flex items-center justify-between w-1/2">
-      <div id="pp">
-        <a href="">
-          <img id="ID-photo" src="assets/icon/general/photo_secondaire.jpeg" alt="fr"/>
-        </a>
-      </div>
+      <a href="">
+        <img class="rounded-full w-2/5" src="assets/icon/general/photo_secondaire.jpeg" alt="fr"/>
+      </a>
       <div id="section-rubrique">
         <a class="rubrique" href="#section-presentation">Accueil</a>
         <a class="rubrique" href="#section-parcours">Parcours</a>
@@ -34,17 +32,17 @@
 
 <!-- Middle -->
 <div>
-  <div id="section-presentation">
-    <div id="section-code">
-      <div id="bloc-code" class="apparition"><!--Finir les couleurs-->
-        <span><span class="nbCode">1&emsp;</span><span class="orange">public class </span><span>EPortfolio </span>{</span><!--Essayer de faire bouger la parenthese après chaque texte-->
-        <span><span class="nbCode">2&emsp;</span>&emsp;&emsp;<span class="orange">public static void </span><span class="bleu">main</span>(String[] args) {</span>
-        <span><span class="nbCode">3&emsp;</span>&emsp;&emsp;&emsp;&emsp;<span>Developer</span> Alexandre_Meunier = <span class="orange">new</span> Developper(<span class="vert">'software'</span>);</span>
-        <span><span class="nbCode">4&emsp;</span>&emsp;&emsp;&emsp;&emsp;Alexandre_Meunier.AddPicture(<span class="vert">'img/picture'</span>);</span>
-        <span><span class="nbCode">5&emsp;</span>&emsp;&emsp;&emsp;&emsp;System.<span class="violet">out</span>.println(Alexandre_Meunier.getDescription());</span>
-        <span><span class="nbCode">6&emsp;</span>&emsp;&emsp;}</span>
-        <span><span class="nbCode">7&emsp;</span>}<span id="inputBar">|</span></span>
-      </div>
+  <div id="section-presentation" class="flex text-justify flex-col items-center gap-8">
+    <div class="select-none text-left w-full m-32 pl-40">
+      <article id="bloc-code" class="apparition flex flex-col">
+        <section><span>1&emsp;</span><span class="orange">public class </span><span>EPortfolio </span>{</section>
+        <section><span>2&emsp;</span>&emsp;&emsp;<span class="orange">public static void </span><span class="bleu">main</span>(String[] args) {</section>
+        <section><span>3&emsp;</span>&emsp;&emsp;&emsp;&emsp;<span>Developer</span> Alexandre_Meunier = <span class="orange">new</span> Developper(<span class="vert">'software'</span>);</section>
+        <section><span>4&emsp;</span>&emsp;&emsp;&emsp;&emsp;Alexandre_Meunier.AddPicture(<span class="vert">'img/picture'</span>);</section>
+        <section><span>5&emsp;</span>&emsp;&emsp;&emsp;&emsp;System.<span class="violet">out</span>.println(Alexandre_Meunier.getDescription());</section>
+        <section><span>6&emsp;</span>&emsp;&emsp;}</section>
+        <section><span>7&emsp;</span>}<span id="inputBar">|</span></section>
+      </article>
     </div>
     <div id="presentation" class="apparition">
       <div class="flex">
