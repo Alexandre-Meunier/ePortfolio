@@ -294,45 +294,6 @@ a.rubrique{
         height: 200px; /* Taille fixe pour toutes les images */
         object-fit: cover; /* Coupe et ajuste l'image pour remplir l'espace */
     }
-    img{
-        width: 100%;
-        height: 200px;
-        max-width: 100%;
-    }
-    p{
-        margin: 0px;
-    }
-    .contenue-project{
-        .bloc-description{
-            padding: 0px 10px;
-            margin: 15px 0px;
-            .bloc-titre-projet{
-                display: flex;
-                align-items: center;
-                gap: 5px;
-                .titre-projet{
-                    margin: 0px;
-                }
-            }
-            @media (max-width: 768px) {
-                .bloc-titre-projet {
-                    flex-direction: column;
-                    align-items: flex-start;
-                    gap: 0px;
-
-                    .titre-projet {
-                        margin: 0px;
-                    }
-                    margin-bottom: 10px;
-                }
-            }
-            .description p {
-                max-width: 600px; /* Ajuste selon tes besoins */
-                word-wrap: break-word;
-            }
-
-        }
-    }
     &.redirect:hover{
         border: solid #484646;
         cursor: pointer;
@@ -365,15 +326,8 @@ a.rubrique{
 }
 
 .img-competence{
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    align-items: center;
-    gap: 10px;
-    img{
-        height: 30px;
-        width: 30px
-    }
+    height: 30px;
+    width: 30px;
 }
 
 .carte{/*était avec bloc-parcours après fusion*/
