@@ -33,7 +33,7 @@
 <!-- Middle -->
 <div>
   <div id="section-presentation" class="flex text-justify flex-col items-center gap-16" style="background: linear-gradient(to bottom left, #000000, #0a0833, #0a0833);">
-    <div class="select-none text-left w-full m-32 md:pl-40 pl-6 md:text-xl text-lg hidden">
+    <div class="select-none w-full m-32 md:pl-40 pl-6 md:text-xl text-lg hidden">
       <article id="bloc-code" class="apparition flex flex-col">
         <section><span>1&emsp;</span><span class="orange">public class </span><span>EPortfolio </span>{</section>
         <section><span>2&emsp;</span>&emsp;&emsp;<span class="orange">public static void </span><span class="bleu">main</span>(String[] args) {</section>
@@ -58,54 +58,64 @@
       </div>
     </div>
   </div>
-  <div id="section-parcours" class="flex flex-col items-center pt-24" style="background: linear-gradient(to top, #2F2D59, #0a0833);scroll-margin-top: 50px;">
+  <div id="section-parcours" class="flex flex-col items-center pt-24 text-justify" style="background: linear-gradient(to top, #2F2D59, #0a0833);scroll-margin-top: 50px;">
     <h1 class="text-5xl underline mb-6">Mon parcours</h1>
     <div class="apparition flex flex-col gap-12 justify-center md:w-3/5">
-      <div class="flex flex-col items-center text-left gap-6 carte">
-        <h2 class="text-3xl text-center">Diplôme d'ingénieur spécalité Système d'Information (2025 - 2028)</h2>
-        <hr class="border-1 w-4/5">
-        <p>Le diplôme d'ingénieur en préparation va me permettre d'avoir une polyvalence accrue et un esprit critique et d'analyse plus développés.</p>
-        <p>Ces 3 ans m'apporteront de multiples expériences, avec l'alternance chez Aikku, une mobilité internationale ainsi qu'un séjour linguistique dans une école en angleterre.</p>
-        <div class="img-parcours" style="width: 30%">
-          <img src="assets/images/parcours/cnam_logo.jpg" alt="">
+      <div class="flex flex-col items-center gap-6 carte">
+        <div class="flex flex-col items-center text-center">
+          <h2 class="text-3xl">Diplôme d'ingénieur spécalité Système d'Information - CNAM</h2>
+          <h3 class="text-2xl">2025 / 2028</h3>
+          <hr class="border-1 w-full md:w-11/12 mt-2">
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-6">
+          <img class="order-2 md:order-1 w-1/3 md:w-1/4" src="assets/images/parcours/cnam_logo.jpg" alt="">
+          <div class="order-1 md:order-2">
+            <p>Le diplôme d'ingénieur en préparation va me permettre d'avoir une polyvalence accrue et un esprit critique et d'analyse plus développés.</p>
+            <br>
+            <p>Ces 3 ans m'apporteront de multiples expériences, avec l'alternance chez Aikku, une mobilité internationale ainsi qu'un séjour linguistique dans une école en angleterre.</p>
+          </div>
         </div>
       </div>
-      <div class="parcours carte">
-        <h2 class="text-3xl text-center">BUT Informatique (2022 - 2025)</h2>
-        <hr class="border-1 w-2/5 mt-2 mb-6">
-        <div class="text-parc">
-          <div class="img-parcours">
-            <img src="assets/images/parcours/universite.png" alt="">
-          </div>
-          <div class="info-parcours">
+      <div class="flex flex-col items-center gap-6 carte">
+        <div class="flex flex-col items-center text-center">
+          <h2 class="text-3xl">BUT Informatique - IUT de Villetaneuse</h2>
+          <h3 class="text-2xl">2022 / 2025</h3>
+          <hr class="border-1 w-full md:w-11/12 mt-2">
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-6">
+          <img class="order-2 md:order-1 w-2/3 md:w-2/5" src="assets/images/parcours/universite.png" alt="">
+          <div class="order-1 md:order-2">
             <p>Comme le BUT Informatique est pluridisciplinaire, j'ai pu toucher à la programmation de logiciels, d'applications mobiles et web, mais aussi à la gestion d'un projet, au droit du numérique, ainsi qu'au réseau et à l'architecture logiciel.</p>
             <br>
             <p>Ainsi, j'ai pu améliorer mes compétences dans l'informatique grâce à différents projets et d'un stage en deuxième année.</p>
           </div>
         </div>
       </div>
-      <div class="parcours carte">
-        <h2 class="text-3xl text-center">Concours des Olympiades de Sciences de l’Ingénieur (2021 - 2022)</h2>
-        <hr class="border-1 w-4/5 mt-2 mb-6">
-        <div class="text-parc">
-          <div class="img-parcours left">
-            <img src="assets/images/parcours/osi.jpg" alt="">
-          </div>
-          <div class="info-parcours">
+      <div class="flex flex-col items-center gap-6 carte">
+        <div class="flex flex-col items-center text-center">
+          <h2 class="text-3xl">Concours des Olympiades de Sciences de l’Ingénieur</h2>
+          <h3 class="text-2xl">2021 / 2022</h3>
+          <hr class="border-1 w-full md:w-11/12 mt-2">
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-6">
+          <img class="order-2 md:order-1 w-1/3 md:w-2/5" src="assets/images/parcours/osi.jpg" alt="">
+          <div class="order-1 md:order-2">
             <p>Pendant ma deuxième année en STI2D, j'ai pu intégrer une équipe composée de 3 élèves de mon lycée sur le développement d'un projet pour le concours de l'Olympiade de Science de l'ingénieur qui a rassemblé des élèves de la filière SI et STI2D venant de toute la France en 2022 chez <a href="https://www.thalesgroup.com/fr" class="lien">Thalès</a> à Vélizy.</p>
             <br>
             <p>Autour du thème de "l’ingénierie au service de la mobilité", nous avons développé et présenté un projet sur le déplacement d'un drone alimenté par des caténaires et pouvant porter des outils afin de faciliter le travail des ouvriers dans les zones difficiles d'accès.</p>
           </div>
         </div>
       </div>
-      <div class="parcours carte">
-        <h2 class="text-3xl text-center">Baccalauréat technologique STI2D (2020 - 2022)</h2>
-        <hr class="border-1 w-3/5 mt-2 mb-6">
-        <div class="text-parc">
-          <div class="img-parcours left">
-            <img src="assets/images/parcours/sarcelles.jpg" alt="">
-          </div>
-          <div class="info-parcours">
+      <div class="flex flex-col items-center gap-6 carte">
+        <div class="flex flex-col items-center text-center">
+          <h2 class="text-3xl">Baccalauréat technologique STI2D (2020 - 2022)</h2>
+          <h3 class="text-2xl">2020 / 2022</h3>
+          <hr class="border-1 w-full md:w-11/12 mt-2">
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center gap-6">
+          <img class="order-2 md:order-1 w-3/5 " src="assets/images/parcours/sarcelles.jpg" alt="">
+          <div class="order-1 md:order-2">
             <p>Les années du BAC au lycée Maryse Condé (anciennement La Tourelle) à Sarcelles (95) m'ont permis de découvrir le développement de projets autour de l'informatique, de la conception. En effet, les projets en STI2D ont demandé de concevoir des objets touchant la robotique et de connaître les bases de la programmation avec le langage Arduino.</p>
             <br>
             <p>C'est dans une optique de vouloir apporter à un programme un algorithme efficace et la volonté d'apprendre que j'ai choisi le BUT Informatique pour mon cursus post-bac.</p>
