@@ -66,19 +66,15 @@ const projets = document.querySelectorAll('.redirect');
 
 projets.forEach((p)=>{
     p.addEventListener('click', function () {
-        let titre = p.querySelector('.titre-projet').textContent
-        console.log(titre)
-        switch (titre) {
-            /*case "Perform Vision":
-                window.location.href = "https://jupyter.univ-paris13.fr/~12206971/PerformVision/"
-                break;*/
+        let titre_projet = p.getAttribute("value-redirect")
+        switch (titre_projet) {
             case "Portfolio":
-                window.location.href = "#middle"
+                window.location.href = "#section-presentation"
                 break;
-            case "L'ardoise magique":
+            case "Ardoise":
                 window.location.href = "https://github.com/Alexandre-Meunier/Ardoise-magique-Java"
                 break;
-            case "Orchestrateur de services":
+            case "OpenSVC":
                 window.location.href = "https://github.com/Alexandre-Meunier/om3"
                 break;
             case "LetMeCook":
@@ -86,6 +82,12 @@ projets.forEach((p)=>{
                 break;
             case "TechChips":
                 window.location.href = "https://beskarfox.com/drive/NathKaden/PPP%20Podcast/podcast.mp4"
+                break;
+            case "Planning":
+                window.location.href = "https://github.com/philippe-nougaillon/Planning_IAE"
+                break;
+            case "CoopComm":
+                window.location.href = "https://www.coopcomm.fr/"
                 break;
         }
     })
