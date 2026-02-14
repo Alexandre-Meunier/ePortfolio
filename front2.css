@@ -43,7 +43,6 @@ header {
 a.rubrique{
     text-decoration: none;
     color: var(--rubrique);
-    font-size: 1.2rem;
     transition: 1s all;
     &:after{
         display: block;
@@ -62,14 +61,6 @@ a.rubrique{
     }
     &:hover{
         scale: 1.1;
-    }
-}
-
-@media (max-width: 768px) {
-    #middle,
-    footer {
-        width: 100%;
-        box-sizing: border-box;
     }
 }
 

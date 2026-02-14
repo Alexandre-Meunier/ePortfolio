@@ -8,26 +8,49 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=consolas&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css" rel="stylesheet">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
 
 <!-- Header -->
-<header>
+<header x-data="{ open: false }">
+
   <div class="flex justify-center my-2">
-    <div class="flex items-center justify-between w-1/2">
-      <a href="">
-        <img class="rounded-full w-2/5" src="assets/icon/general/photo_secondaire.jpeg" alt="fr"/>
-      </a>
-      <div id="section-rubrique">
+    <div class="flex items-center justify-between w-11/12 md:w-1/2">
+
+      <!-- Logo -->
+        <img class="rounded-full w-12 md:w-20" src="assets/icon/general/photo_secondaire.jpeg" alt="photo">
+
+      <!-- Menu desktop -->
+      <div class="hidden md:flex items-center gap-6">
         <a class="rubrique" href="#section-presentation">Accueil</a>
         <a class="rubrique" href="#section-parcours">Parcours</a>
         <a class="rubrique" href="#section-competences">Compétences</a>
         <a class="rubrique" href="#section-projet">Projets</a>
         <a class="rubrique" href="#section-experiences">Expériences</a>
+        <a class="rubrique ml-16" href="#footer">Me contacter</a>
       </div>
-      <a class="rubrique" href="#footer">Me contacter</a><!--Renvoyer vers un formulaire-->
+
+      <!-- Bouton hamburger mobile -->
+      <button @click="open = !open" class="md:hidden flex flex-col gap-2 w-8">
+        <span class="border"></span>
+        <span class="border"></span>
+        <span class="border"></span>
+      </button>
+
     </div>
   </div>
+
+  <!-- Menu mobile -->
+  <div x-show="open" x-transition @click.outside="open = false" class="md:hidden flex flex-wrap justify-center gap-4 py-4" >
+    <a class="rubrique" href="#section-presentation">Accueil</a>
+    <a class="rubrique" href="#section-parcours">Parcours</a>
+    <a class="rubrique" href="#section-competences">Compétences</a>
+    <a class="rubrique" href="#section-projet">Projets</a>
+    <a class="rubrique" href="#section-experiences">Expériences</a>
+    <a class="rubrique" href="#footer">Me contacter</a>
+  </div>
+
 </header>
 
 <!-- Middle -->
