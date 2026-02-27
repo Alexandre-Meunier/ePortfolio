@@ -54,8 +54,8 @@
 </header>
 
 <!-- Middle -->
-<div>
-  <div id="section-presentation" class="flex text-justify flex-col items-center gap-16" style="background: linear-gradient(to bottom left, #000000, #0a0833, #0a0833);">
+<div style="background: linear-gradient(230deg,rgba(4, 4, 43, 1) 0%, rgba(17, 14, 70, 1) 37%, rgba(33, 23, 67, 1) 75%, rgba(63, 31, 63, 1) 100%);">
+  <div id="section-presentation" class="flex text-justify flex-col items-center gap-16">
     <div class="select-none w-full m-32 md:pl-40 pl-6 md:text-xl text-lg hidden">
       <article id="bloc-code" class="apparition flex flex-col">
         <section><span>1&emsp;</span><span class="orange">public class </span><span>EPortfolio </span>{</section>
@@ -81,8 +81,8 @@
       </div>
     </div>
   </div>
-  <div id="section-parcours" class="flex flex-col items-center pt-12 md:pt-24 text-justify" style="background: linear-gradient(to top, #2F2D59, #0a0833);scroll-margin-top: 50px;">
-    <h1 class="text-4xl md:text-5xl underline mb-6">Mon parcours</h1>
+  <div id="section-parcours" class="flex flex-col items-center pt-12 md:pt-24 text-justify" style="scroll-margin-top: 50px;">
+    <h1 class="apparition text-4xl md:text-5xl underline mb-6">Mon parcours</h1>
     <div class="apparition flex flex-col gap-12 justify-center md:w-3/5">
       <div class="flex flex-col items-center gap-6 carte">
         <div class="flex flex-col items-center text-center">
@@ -147,8 +147,8 @@
       </div>
     </div>
   </div>
-  <div id="section-competences" class="sections pt-12 md:pt-24" style="scroll-margin-top: 50px;">
-    <h1 class="text-4xl md:text-5xl underline text-center mb-6">Mes compétences</h1>
+  <div id="section-competences" class="flex flex-col items-center pt-12 md:pt-24" style="scroll-margin-top: 50px;">
+    <h1 class="apparition text-4xl md:text-5xl underline text-center mb-6">Mes compétences</h1>
     <div class="apparition md:w-3/5 flex items-center flex-wrap justify-center text-xl md:text-3xl">
         <div class="carte-competence">
           <img src="assets/svg/rails.svg" alt="">
@@ -215,206 +215,204 @@
           <p>Android</p>
         </div>
       </div>
-    <div id="section-projet" class="pt-24 flex flex-col items-center" style="scroll-margin-top: 50px;">
-      <h1 class="mb-6 text-5xl underline">Mes projets</h1>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 apparition md:w-4/5">
-          <a class="projet redirect" href="https://github.com/philippe-nougaillon/Planning_IAE">
-            <img class="object-contain" src="assets/images/projets/planning.png"/>
-            <div class="flex flex-col gap-4 p-4">
-              <div>
-                <h2 class="text-3xl font-bold">Planning - Aïkku</h2>
-                <p>Application web pour les établissements de formation, tel que l'IAE de Paris, permettant la gestion des formations, des cours, etc.</p>
-              </div>
-              <div class="flex flex-wrap gap-2 text-lg">
-                <p class="p-1" style="background-color: #2e4e5c">Suivie et amélioration</p>
-                <p class="p-1" style="background-color: #2e5c46;">Collaboration</p>
-                <p class="p-1" style="background-color: #3c2e5c;">Intégration API</p>
-              </div>
-              <div class="flex flex-wrap gap-4">
-                <img class="img-competence" src="assets/svg/rails.svg" style="transform: scale(1.2);" alt="Ruby on Rails" title="Ruby on Rails">
-                <img class="img-competence" src="assets/svg/rest-api.svg" alt="API rest" title="API rest">
-                <img class="img-competence" src="assets/svg/sql.svg" alt="Sql" title="Sql">
-              </div>
-            </div>
-          </a>
-          <a class="projet redirect" href="https://www.coopcomm.fr/">
-            <img class="object-contain" src="assets/images/projets/coopcomm.png" style="height: 120px;"/>
-            <div class="flex flex-col gap-4 p-4">
-              <div>
-                <h2 class="text-3xl font-bold">CoopComm - Aïkku</h2>
-                <p>Application web pour les communautés de communes permettant la gestion des interventions (tonte du parc, aménagement du centre-ville, etc).</p>
-              </div>
-              <div class="flex flex-wrap gap-2 text-lg">
-                <p class="p-1" style="background-color: #2e4e5c">Lancement du projet</p>
-                <p class="p-1" style="background-color: #2e5c46;">Tests unitaires</p>
-                <p class="p-1" style="background-color: #3c2e5c;">Intégration API</p>
-              </div>
-              <div class="flex flex-wrap gap-4">
-                <img class="img-competence" src="assets/svg/rails.svg" style="transform: scale(1.2); " alt="Ruby on Rails" title="Ruby on Rails">
-                <img class="img-competence" src="assets/svg/rest-api.svg" alt="API rest" title="API rest">
-                <img class="img-competence" src="assets/svg/sql.svg" alt="Sql" title="Sql">
-              </div>
-            </div>
-          </a>
-          <a class="projet redirect" href="https://letmecook.beskarfox.com/">
-            <img class="object-contain" src="assets/images/projets/letmecook.png"/>
-            <div class="flex flex-col gap-4 p-4">
-              <div>
-                <h2 class="text-3xl font-bold">LetMeCook - BUT3</h2>
-                <p>Développement d'une application contenant un sélecteur de plats.</p>
-              </div>
-              <div class="flex flex-wrap gap-2 text-lg">
-                <p class="p-1" style="background-color: #2e4e5c">Algorithme</p>
-                <p class="p-1" style="background-color: #2e5c46;">Gestion de projet</p>
-                <p class="p-1" style="background-color: #3c2e5c;">Framework</p>
-              </div>
-              <div class="flex flex-wrap gap-4">
-                <img class="img-competence" src="assets/svg/laravel.svg" alt="Laravel" title="Laravel">
-                <img class="img-competence" src="assets/svg/sql.svg" alt="Sql" title="Sql">
-              </div>
-            </div>
-          </a>
-          <a class="projet redirect" href="https://github.com/Alexandre-Meunier/om3">
-            <img class="object-contain" src="assets/images/projets/opensvc.png"/>
-            <div class="flex flex-col gap-4 p-4">
-              <div>
-                <h2 class="text-3xl font-bold">Orchestrateur de services - Stage BUT2</h2>
-                <p>Développement d'un logiciel au sein de mon stage assurant la haute disponibilité des services d'un cluster.</p>
-              </div>
-              <div class="flex flex-wrap gap-2 text-lg">
-                  <p class="p-1" style="background-color: #2e4e5c">GitHub</p>
-                  <p class="p-1" style="background-color: #2e5c46;">Structuration de données</p>
-                  <p class="p-1" style="background-color: #3c2e5c;">Travail en équipe</p>
-              </div>
-              <div class="flex flex-wrap gap-4">
-                <img class="img-competence" src="assets/svg/go.svg" alt="Go" title="Go">
-                <img class="img-competence" src="assets/svg/bash.svg" alt="Bash" title="Bash">
-                <img class="img-competence" src="assets/svg/redis.svg" alt="Redis" title="Redis">
-                <img class="img-competence" src="assets/svg/rest-api.svg" alt="API rest" title="API rest">
-              </div>
-            </div>
-          </a>
-          <a class="projet redirect" href="https://beskarfox.com/drive/NathKaden/PPP%20Podcast/podcast.mp4">
-            <img class="object-contain" src="assets/images/projets/tech-chips.png"/>
-            <div class="flex flex-col gap-4 p-4">
-              <div>
-                <h2 class="text-3xl font-bold">TechChips - Stage BUT2</h2>
-                <p>Réalisation d'un podcast sur les enjeux politiques de l'IA.</p>
-                <br>
-                <p class="plus" onclick="event.stopPropagation()">En savoir plus ...</p>
-              </div>
-              <div class="flex flex-wrap gap-2 text-lg">
-                <p class="p-1" style="background-color: #2e4e5c">Veille technologique</p>
-                <p class="p-1" style="background-color: #2e5c46;">Rédaction</p>
-                <p class="p-1" style="background-color: #3c2e5c;">Gantt</p>
-              </div>
-              <div class="flex flex-wrap gap-4">
-              </div>
-            </div>
-          </a>
-          <div class="projet">
-            <img class="object-contain" src="assets/images/projets/fearless.png"/>
-            <div class="flex flex-col gap-4 p-4">
-              <div>
-                <h2 class="text-3xl font-bold">Optimisation web - BUT3</h2>
-                <p>Optimisation et debug d'un site créé dans le S3</p>
-              </div>
-              <div class="flex flex-wrap gap-2 text-lg-projet">
-                  <p class="p-1" style="background-color: #2e4e5c">Optimisation</p>
-                  <p class="p-1" style="background-color: #2e5c46;">Gestion de projet</p>
-                  <p class="p-1" style="background-color: #3c2e5c;">Sécurité des données</p>
-              </div>
-              <div class="flex flex-wrap gap-4">
-                <img class="img-competence" src="assets/svg/html.svg" alt="Html" title="Html">
-                <img class="img-competence" src="assets/svg/css.svg" alt="Css" title="Css">
-                <img class="img-competence" src="assets/svg/js.svg" alt="Js" title="Js">
-                <img class="img-competence" src="assets/svg/php.svg" alt="Php" title="Php">
-                <img class="img-competence" src="assets/svg/sql.svg" alt="Sql" title="Sql">
-              </div>
-            </div>
+  </div>
+  <div id="section-projet" class="flex flex-col items-center pt-12 md:pt-24" style="scroll-margin-top: 50px;">
+    <h1 class="apparition mb-6 text-5xl underline">Mes projets</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 apparition md:w-4/5">
+      <a class="projet redirect" href="https://github.com/philippe-nougaillon/Planning_IAE">
+        <img class="object-contain" src="assets/images/projets/planning.png"/>
+        <div class="flex flex-col gap-4 p-4">
+          <div>
+            <h2 class="text-3xl font-bold">Planning - Aïkku</h2>
+            <p>Application web pour les établissements de formation, tel que l'IAE de Paris, permettant la gestion des formations, des cours, etc.</p>
           </div>
-          <div class="projet">
-            <img class="object-contain" src="assets/images/projets/python.jpg"/>
-            <div class="flex flex-col gap-4 p-4">
-              <div>
-                <h2 class="text-3xl font-bold">Réseau social - BUT1</h2>
-                <p>Développer un réseau social simple en Python</p>
-              </div>
-              <div class="flex flex-wrap gap-2 text-lg">
-                  <p class="p-1" style="background-color: #2e4e5c">Algorithme</p>
-                  <p class="p-1" style="background-color: #2e5c46;">Données</p>
-              </div>
-              <div class="flex flex-wrap gap-4">
-                <img class="img-competence" src="assets/svg/python.svg" alt="Python" title="Python">
-              </div>
-            </div>
+          <div class="flex flex-wrap gap-2 text-lg">
+            <p class="p-1" style="background-color: #2e4e5c">Suivie et amélioration</p>
+            <p class="p-1" style="background-color: #2e5c46;">Collaboration</p>
+            <p class="p-1" style="background-color: #3c2e5c;">Intégration API</p>
           </div>
-          <a class="projet redirect" href="https://github.com/Alexandre-Meunier/Ardoise-magique-Java">
-            <img class="object-contain" src="assets/images/projets/ardoise2.png"/>
-            <div class="flex flex-col gap-4 p-4">
-              <div>
-                <h2 class="text-3xl font-bold">L'ardoise magique - BUT2</h2>
-                <p>Développer des formes géométriques sur un plan 2D</p>
-              </div>
-              <div class="flex flex-wrap gap-2 text-lg">
-                  <p class="p-1" style="background-color: #2e4e5c">Héritage</p>
-                  <p class="p-1" style="background-color: #2e5c46;">Encapsulation</p>
-                  <p class="p-1" style="background-color: #3c2e5c;">Polymorphisme</p>
-              </div>
-              <div class="flex flex-wrap gap-4">
-                <img class="img-competence" src="assets/svg/java.svg" alt="Java" title="Java">
-              </div>
-            </div>
-          </a>
-          <div class="projet">
-            <img class="object-contain" src="assets/images/projets/performvision.png"/>
-            <div class="flex flex-col gap-4 p-4">
-              <div>
-                <h2 class="text-3xl font-bold">Perform Vision - BUT2</h2>
-                <p>Développement d'un site Internet</p>
-              </div>
-              <div class="flex flex-wrap gap-2 text-lg">
-                  <p class="p-1" style="background-color: #2e4e5c">Recueil de besoin</p>
-                  <p class="p-1" style="background-color: #2e5c46;">Gestion de projet</p>
-                  <p class="p-1" style="background-color: #3c2e5c;">Architecture MVC</p>
-              </div>
-              <div class="flex flex-wrap gap-4">
-                <img class="img-competence" src="assets/svg/html.svg" alt="Html" title="Html">
-                <img class="img-competence" src="assets/svg/css.svg" alt="Css" title="Css">
-                <img class="img-competence" src="assets/svg/js.svg" alt="Js" title="Js">
-                <img class="img-competence" src="assets/svg/php.svg" alt="Php" title="Php">
-                <img class="img-competence" src="assets/svg/sql.svg" alt="Sql" title="Sql">
-              </div>
-            </div>
+          <div class="flex flex-wrap gap-4">
+            <img class="img-competence" src="assets/svg/rails.svg" style="transform: scale(1.2);" alt="Ruby on Rails" title="Ruby on Rails">
+            <img class="img-competence" src="assets/svg/rest-api.svg" alt="API rest" title="API rest">
+            <img class="img-competence" src="assets/svg/sql.svg" alt="Sql" title="Sql">
           </div>
-          <a href="#section-presentation">
-            <div class="projet redirect">
-              <img class="object-contain" src="assets/images/projets/portfolio.png"/>
-              <div class="flex flex-col gap-4 p-4">
-                <div>
-                  <h2 class="text-3xl font-bold">Portfolio - Personnel</h2>
-                  <p>Développement de mon propre site pour me présenter.</p>
-                </div>
-                <div class="flex flex-wrap gap-2 text-lg">
-                  <p class="p-1" style="background-color: #2e4e5c">Compréhension de soi</p>
-                  <p class="p-1" style="background-color: #2e5c46;">Communication écrite</p>
-                  <p class="p-1" style="background-color: #3c2e5c;">Créativité</p>
-                </div>
-                <div class="flex flex-wrap gap-4">
-                  <img class="img-competence" src="assets/svg/html.svg" alt="Html" title="Html">
-                  <img class="img-competence" src="assets/svg/css.svg" alt="Css" title="Css">
-                  <img class="img-competence" src="assets/svg/js.svg" alt="Js" title="Js">
-                </div>
-              </div>
-            </div>
-          </a>
         </div>
+      </a>
+      <a class="projet redirect" href="https://www.coopcomm.fr/">
+        <img class="object-contain" src="assets/images/projets/coopcomm.png" style="height: 120px;"/>
+        <div class="flex flex-col gap-4 p-4">
+          <div>
+            <h2 class="text-3xl font-bold">CoopComm - Aïkku</h2>
+            <p>Application web pour les communautés de communes permettant la gestion des interventions (tonte du parc, aménagement du centre-ville, etc).</p>
+          </div>
+          <div class="flex flex-wrap gap-2 text-lg">
+            <p class="p-1" style="background-color: #2e4e5c">Lancement du projet</p>
+            <p class="p-1" style="background-color: #2e5c46;">Tests unitaires</p>
+            <p class="p-1" style="background-color: #3c2e5c;">Intégration API</p>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <img class="img-competence" src="assets/svg/rails.svg" style="transform: scale(1.2); " alt="Ruby on Rails" title="Ruby on Rails">
+            <img class="img-competence" src="assets/svg/rest-api.svg" alt="API rest" title="API rest">
+            <img class="img-competence" src="assets/svg/sql.svg" alt="Sql" title="Sql">
+          </div>
+        </div>
+      </a>
+      <a class="projet redirect" href="https://letmecook.beskarfox.com/">
+        <img class="object-contain" src="assets/images/projets/letmecook.png"/>
+        <div class="flex flex-col gap-4 p-4">
+          <div>
+            <h2 class="text-3xl font-bold">LetMeCook - BUT3</h2>
+            <p>Développement d'une application contenant un sélecteur de plats.</p>
+          </div>
+          <div class="flex flex-wrap gap-2 text-lg">
+            <p class="p-1" style="background-color: #2e4e5c">Algorithme</p>
+            <p class="p-1" style="background-color: #2e5c46;">Gestion de projet</p>
+            <p class="p-1" style="background-color: #3c2e5c;">Framework</p>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <img class="img-competence" src="assets/svg/laravel.svg" alt="Laravel" title="Laravel">
+            <img class="img-competence" src="assets/svg/sql.svg" alt="Sql" title="Sql">
+          </div>
+        </div>
+      </a>
+      <a class="projet redirect" href="https://github.com/Alexandre-Meunier/om3">
+        <img class="object-contain" src="assets/images/projets/opensvc.png"/>
+        <div class="flex flex-col gap-4 p-4">
+          <div>
+            <h2 class="text-3xl font-bold">Orchestrateur de services - Stage BUT2</h2>
+            <p>Développement d'un logiciel au sein de mon stage assurant la haute disponibilité des services d'un cluster.</p>
+          </div>
+          <div class="flex flex-wrap gap-2 text-lg">
+            <p class="p-1" style="background-color: #2e4e5c">GitHub</p>
+            <p class="p-1" style="background-color: #2e5c46;">Structuration de données</p>
+            <p class="p-1" style="background-color: #3c2e5c;">Travail en équipe</p>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <img class="img-competence" src="assets/svg/go.svg" alt="Go" title="Go">
+            <img class="img-competence" src="assets/svg/bash.svg" alt="Bash" title="Bash">
+            <img class="img-competence" src="assets/svg/redis.svg" alt="Redis" title="Redis">
+            <img class="img-competence" src="assets/svg/rest-api.svg" alt="API rest" title="API rest">
+          </div>
+        </div>
+      </a>
+      <a class="projet redirect" href="https://beskarfox.com/drive/NathKaden/PPP%20Podcast/podcast.mp4">
+        <img class="object-contain" src="assets/images/projets/tech-chips.png"/>
+        <div class="flex flex-col gap-4 p-4">
+          <div>
+            <h2 class="text-3xl font-bold">TechChips - Stage BUT2</h2>
+            <p>Réalisation d'un podcast sur les enjeux politiques de l'IA.</p>
+            <br>
+            <p class="plus" onclick="event.stopPropagation()">En savoir plus ...</p>
+          </div>
+          <div class="flex flex-wrap gap-2 text-lg">
+            <p class="p-1" style="background-color: #2e4e5c">Veille technologique</p>
+            <p class="p-1" style="background-color: #2e5c46;">Rédaction</p>
+            <p class="p-1" style="background-color: #3c2e5c;">Gantt</p>
+          </div>
+          <div class="flex flex-wrap gap-4">
+          </div>
+        </div>
+      </a>
+      <div class="projet">
+        <img class="object-contain" src="assets/images/projets/fearless.png"/>
+        <div class="flex flex-col gap-4 p-4">
+          <div>
+            <h2 class="text-3xl font-bold">Optimisation web - BUT3</h2>
+            <p>Optimisation et debug d'un site créé dans le S3</p>
+          </div>
+          <div class="flex flex-wrap gap-2 text-lg-projet">
+            <p class="p-1" style="background-color: #2e4e5c">Optimisation</p>
+            <p class="p-1" style="background-color: #2e5c46;">Gestion de projet</p>
+            <p class="p-1" style="background-color: #3c2e5c;">Sécurité des données</p>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <img class="img-competence" src="assets/svg/html.svg" alt="Html" title="Html">
+            <img class="img-competence" src="assets/svg/css.svg" alt="Css" title="Css">
+            <img class="img-competence" src="assets/svg/js.svg" alt="Js" title="Js">
+            <img class="img-competence" src="assets/svg/php.svg" alt="Php" title="Php">
+            <img class="img-competence" src="assets/svg/sql.svg" alt="Sql" title="Sql">
+          </div>
+        </div>
+      </div>
+      <div class="projet">
+        <img class="object-contain" src="assets/images/projets/python.jpg"/>
+        <div class="flex flex-col gap-4 p-4">
+          <div>
+            <h2 class="text-3xl font-bold">Réseau social - BUT1</h2>
+            <p>Développer un réseau social simple en Python</p>
+          </div>
+          <div class="flex flex-wrap gap-2 text-lg">
+            <p class="p-1" style="background-color: #2e4e5c">Algorithme</p>
+            <p class="p-1" style="background-color: #2e5c46;">Données</p>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <img class="img-competence" src="assets/svg/python.svg" alt="Python" title="Python">
+          </div>
+        </div>
+      </div>
+      <a class="projet redirect" href="https://github.com/Alexandre-Meunier/Ardoise-magique-Java">
+        <img class="object-contain" src="assets/images/projets/ardoise2.png"/>
+        <div class="flex flex-col gap-4 p-4">
+          <div>
+            <h2 class="text-3xl font-bold">L'ardoise magique - BUT2</h2>
+            <p>Développer des formes géométriques sur un plan 2D</p>
+          </div>
+          <div class="flex flex-wrap gap-2 text-lg">
+            <p class="p-1" style="background-color: #2e4e5c">Héritage</p>
+            <p class="p-1" style="background-color: #2e5c46;">Encapsulation</p>
+            <p class="p-1" style="background-color: #3c2e5c;">Polymorphisme</p>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <img class="img-competence" src="assets/svg/java.svg" alt="Java" title="Java">
+          </div>
+        </div>
+      </a>
+      <div class="projet">
+        <img class="object-contain" src="assets/images/projets/performvision.png"/>
+        <div class="flex flex-col gap-4 p-4">
+          <div>
+            <h2 class="text-3xl font-bold">Perform Vision - BUT2</h2>
+            <p>Développement d'un site Internet</p>
+          </div>
+          <div class="flex flex-wrap gap-2 text-lg">
+            <p class="p-1" style="background-color: #2e4e5c">Recueil de besoin</p>
+            <p class="p-1" style="background-color: #2e5c46;">Gestion de projet</p>
+            <p class="p-1" style="background-color: #3c2e5c;">Architecture MVC</p>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <img class="img-competence" src="assets/svg/html.svg" alt="Html" title="Html">
+            <img class="img-competence" src="assets/svg/css.svg" alt="Css" title="Css">
+            <img class="img-competence" src="assets/svg/js.svg" alt="Js" title="Js">
+            <img class="img-competence" src="assets/svg/php.svg" alt="Php" title="Php">
+            <img class="img-competence" src="assets/svg/sql.svg" alt="Sql" title="Sql">
+          </div>
+        </div>
+      </div>
+      <a class="projet redirect" href="https://github.com/Alexandre-Meunier/ePortfolio">
+        <img class="object-contain" src="assets/images/projets/portfolio.png"/>
+        <div class="flex flex-col gap-4 p-4">
+            <div>
+              <h2 class="text-3xl font-bold">Portfolio - Personnel</h2>
+              <p>Développement de mon propre site pour me présenter.</p>
+            </div>
+            <div class="flex flex-wrap gap-2 text-lg">
+              <p class="p-1" style="background-color: #2e4e5c">Compréhension de soi</p>
+              <p class="p-1" style="background-color: #2e5c46;">Communication écrite</p>
+              <p class="p-1" style="background-color: #3c2e5c;">Créativité</p>
+            </div>
+            <div class="flex flex-wrap gap-4">
+              <img class="img-competence" src="assets/svg/html.svg" alt="Html" title="Html">
+              <img class="img-competence" src="assets/svg/css.svg" alt="Css" title="Css">
+              <img class="img-competence" src="assets/svg/js.svg" alt="Js" title="Js">
+            </div>
+          </div>
+      </a>
     </div>
   </div>
-  <div id="section-experiences" class="sections py-12 md:py-24" style="scroll-margin-top: 50px;">
-    <h1 class="text-4xl md:text-5xl text-center underline mb-6">Mes expériences professionnelles</h1>
-    <div class="flex flex-col md:w-1/2 gap-8 apparition">
-      <div class="flex flex-col gap-6">
+  <div id="section-experiences" class="flex flex-col items-center py-12 md:py-24" style="scroll-margin-top: 50px;">
+    <h1 class="apparition text-4xl md:text-5xl text-center underline mb-6">Mes expériences professionnelles</h1>
+    <div class="flex flex-col md:w-1/2 gap-8">
+      <div id="section-stage-alternance" class="apparition flex flex-col gap-6">
         <h2 class="text-2xl md:text-3xl text-center">Stages / Alternances</h2>
         <div class="flex flex-col items-center carte">
           <div class="flex flex-col items-center">
@@ -442,7 +440,7 @@
             </div>
         </div>
       </div>
-      <div id="section-job" class="flex flex-col gap-6">
+      <div id="section-job" class="apparition flex flex-col gap-6">
           <h2 class="text-4xl text-center">Jobs étudiant</h2>
           <div class="flex flex-col items-center carte">
             <div class="flex flex-col items-center">
@@ -484,13 +482,15 @@
 <div id="footer" class="border-top">
   <div id="section-footer">
     <div id="footer-presentation">
-      <h1 class="text-4xl md:text-5xl">Alexandre Meunier</h1>
-      <hr class="border-1 w-4/5 mt-2 mb-4">
+      <div>
+        <h1 class="text-4xl md:text-5xl">Alexandre Meunier</h1>
+        <hr class="border-1 w-full mt-2 mb-4">
+      </div>
       <div>
         <p class="text-2xl">Me contacter :</p>
-        <div class="coordonnees"><img id="icon-email" src="assets/icon/general/email.jpeg" alt=""><span class="copier">alexandre.meunierpro@outlook.fr</span></div>
-        <div class="coordonnees"><img id="icon-tel" src="assets/icon/general/telephone.png" alt=""><span class="copier">06 40 64 44 22</span></div>
-        <div class="coordonnees"><img src="assets/svg/trombonne_CV.svg" height="20" width="20" alt=""><a href=documents/CV%20Alexandre%20Meunier.pdf class="lien">Mon CV</a></div>
+        <div class="coordonnees"><img id="icon-email" src="assets/icon/general/email.jpeg" alt=""><a class="copier" href="mailto:alexandre.meunierpro@outlook.fr" title="Envoyer un email">alexandre.meunierpro@outlook.fr</a></div>
+        <div class="coordonnees"><img id="icon-tel" src="assets/icon/general/telephone.png" alt=""><span class="copier" onclick="copyText(this)" title="Copier">06 40 64 44 22</span><small class="hidden ml-2 border border-gray-700 bg-gray-800 rounded px-2">Copié !</small></div>
+        <div class="coordonnees"><img src="assets/svg/trombonne_CV.svg" height="20" width="20" alt=""><a href=/assets/documents/CV_MEUNIER_Alexandre_FR.pdf class="lien">Mon CV</a></div>
         <div class="flex mt-4">
           <a href="https://www.linkedin.com/in/alexandre-meunier-0366b9287/"><img id="icon-ln" src="assets/icon/general/linkedIn.png" alt=""></a>
           <a href="https://github.com/Alexandre-Meunier"><img id="icon-git" src="assets/icon/general/github.png" style="" alt=""></a>
