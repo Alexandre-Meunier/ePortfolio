@@ -37,23 +37,18 @@ document.addEventListener("DOMContentLoaded", function(){
 
 // Pour copier
 
-/* Pas utilisé
-document.addEventListener("DOMContentLoaded", function() {
-    const copyTextSpans = document.querySelectorAll('.copier');
+function copyText(element) {
+    const textToCopy = element.innerText;
+    const tooltip = element.nextElementSibling;
 
-    copyTextSpans.forEach(span => {
-        span.addEventListener('click', function() {
-            const textToCopy = span.textContent;
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        tooltip.classList.remove("hidden");
 
-            navigator.clipboard.writeText(textToCopy).then(() => {
-                alert(`Texte copié: ${textToCopy}`);
-            }).catch(err => {
-                console.error('Échec de la copie : ', err);
-            });
-        });
+        setTimeout(() => {
+            tooltip.classList.add("hidden");
+        }, 2000);
     });
-});
-*/
+}
 
 function closePopup() {
     document.getElementById('popup').style.opacity = 0;

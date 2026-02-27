@@ -476,6 +476,9 @@ a.rubrique{
 .copier{
     color: #b5d855;
     cursor: pointer;
+    &:hover{
+        text-decoration: underline
+    }
 }
 
 #icon-email{
