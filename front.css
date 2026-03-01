@@ -221,7 +221,7 @@ a.rubrique{
     display: inline-block; /* pour mieux contrôler le comportement inline */
 }
 
-.logo{
+.lien-texte{
     text-decoration: none;
     color: inherit;
     &:hover{
