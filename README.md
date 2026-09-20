@@ -1,8 +1,8 @@
 # E-Portfolio
-Portfolio personnel développé en HTML, TailwindCSS et Javascript.
+Personnal portfolio developped in HTML, TailwindCSS and Javascript.
 
-# Objectif
-Ce Portfolio est un support visuel complémentaire à mon CV, mettant en avant mes projets et les missions que j'ai au cours de mon alternance et de ma formation.
+# Goal
+This Portfolio serves as a visual supplement to my CV, highlighting the projects and assignments I have undertaken during my work-study program and training.
 
-# Hébergement
-Site hébergé sur Beskarfox.com, un serveur en commun avec mon collègue [Nathan Boulangeot](https://github.com/NathKaden), via le lien suivant : https://alexandre.beskarfox.com/
+# Hosting
+Site hosted on Beskarfox.com, a server shared with my colleague [Nathan Boulangeot](https://github.com/NathKaden) (https://beskarfox.com/)
