@@ -14,11 +14,11 @@
 <!-- Header -->
 <header x-data="{ open: false }">
 
-  <div class="flex justify-center my-2">
-    <div class="flex items-center justify-between w-11/12 md:w-1/2">
+  <div class="flex justify-center my-1">
+    <div class="flex items-center justify-between w-11/12 max-w-4xl">
 
       <!-- Logo -->
-        <img class="rounded-full w-12 md:w-16" src="assets/icon/general/photo_secondaire.jpeg" alt="photo">
+      <img class="rounded-full w-12 md:mr-16" src="assets/icon/general/photo_secondaire.jpeg" alt="photo">
 
       <!-- Menu desktop -->
       <div class="hidden md:flex items-center gap-6">
@@ -27,8 +27,9 @@
         <a class="rubrique" href="#section-competences">Compétences</a>
         <a class="rubrique" href="#section-projet">Projets</a>
         <a class="rubrique" href="#section-experiences">Expériences</a>
-        <a class="rubrique ml-16" href="#footer">Me contacter</a>
       </div>
+
+      <a class="rubrique md:ml-16" href="#footer">Me contacter</a>
 
       <!-- Bouton hamburger mobile -->
       <button @click="open = !open" class="md:hidden flex flex-col gap-2 w-8">
@@ -72,10 +73,12 @@
         <div class="flex flex-col justify-center w-full px-4 gap-6 md:gap-4">
           <h1 class="text-4xl text-center md:mb-2 md:hidden block" style="color: #3dbcd7;">Alexandre Meunier</h1>
           <div class="flex flex-col gap-4">
-            <p>Préparant mon diplôme d'ingénieur spécialité Système d'Information au CNAM de Paris, je suis apprentis ingénieur logiciel chez <a href="https://www.aikku.eu/" class="lien-texte">Aikku</a>.</p>
-            <p>Étant très rigoureux, je suis assez maniaque sur les bords, avec un esprit d'analyse, en donnant mes points de vue et en proposant des idées. Et surtout j'aime apprendre, une bonne journée comprend quelque chose d'appris.
-            </br>Je souhaite aujourd'hui m'améliorer dans la gestion de projet et dans l'architecture logicielle.</p>
-            <p>Comme passe-temps, je fais de l'escalade pour la forme, l'équilibre, et la réflexion, un grimpeur dans l'âme.</p>
+            <p>🧑‍🎓 Préparant mon diplôme d'ingénieur spécialité Système d'Information au CNAM de Paris, je suis apprentis ingénieur logiciel chez <a href="https://www.aikku.eu/" class="lien-texte">Aikku</a>.</p>
+            <ul class="list-disc list-inside flex flex-col gap-2">
+              <li><strong>Atouts</strong> : Rigueur, esprit d'analyse et force de proposition dans la conception de solutions évolutives.</li>
+              <li><strong>Objectifs</strong> : Montée en compétences en architecture logicielle et gestion de projet.</li>
+              <li><strong>Philosophie & Passions</strong> : Apprentissage continu au quotidien | Pratique de l'escalade (réflexion, équilibre et dépassement de soi)</li>
+            </ul>
           </div>
         </div>
       </div>
