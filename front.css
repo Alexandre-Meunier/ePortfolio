@@ -507,3 +507,9 @@ a.rubrique{
 
     }
 }
+
+/* Cache la langue non choisie */
+html[lang="fr"] body [lang="en"],
+html[lang="en"] body [lang="fr"] {
+    display: none;
+}

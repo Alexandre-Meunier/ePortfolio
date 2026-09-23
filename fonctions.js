@@ -49,3 +49,20 @@ function copyText(element) {
         }, 2000);
     });
 }
+
+
+// Choix de la langue(français par défaut)
+
+function setLang(lang) {
+    document.documentElement.lang = lang
+    document.querySelectorAll("[data-title-fr]").forEach(element => {
+        element.title = lang === "fr" ? element.dataset.titleFr : element.dataset.titleEn
+    })
+    try { localStorage.setItem("lang", lang) } catch (e) {}
+}
+
+setLang(document.documentElement.lang === "en" ? "en" : "fr")
+
+document.getElementById("lang-toggle").addEventListener("click", () => {
+    setLang(document.documentElement.lang === "fr" ? "en" : "fr")
+})
